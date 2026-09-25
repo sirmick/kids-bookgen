@@ -100,15 +100,16 @@ td textarea { min-height: 40px; }
       <button class="primary" id="new">New book</button>
       <button id="importJson">Import book JSON…</button>
       <button id="importProject">Import project file…</button>
+      <select id="example"><option value="">Load an example…</option><option value="cascades">Goodnight, Mountain</option><option value="dogs">Goodnight, Dogs</option><option value="farm">Goodnight, Little Farm</option><option value="fireflies">The Firefly's Lantern</option><option value="fnq">Goodnight, Daintree</option><option value="garden">Goodnight, Little Garden</option><option value="kittens">Goodnight, Kittens</option><option value="r01-sit-pip">Sit, Pip</option><option value="r02-mim-is-a-cat">Mim Is a Cat</option><option value="r03-sam-the-dog">Sam the Dog</option><option value="r04-bob-and-the-box">Bob and the Box</option><option value="r05-chip-the-pup">Chip the Pup</option><option value="r06-spot-and-the-frog">Spot and the Frog</option><option value="r07-jack-can-run">Jack Can Run</option><option value="r08-max-is-not-big">Max Is Not Big</option><option value="r09-zip-is-fast">Zip Is Fast</option><option value="r10-the-big-nap">The Big Nap</option><option value="rainforest">Rainforest Lullaby</option><option value="reef">Down in the Sleepy Reef</option><option value="savanna">Goodnight, Big Savanna</option><option value="woodland">Olive Keeps Watch</option><option value="zoo">The Zoo Goes to Sleep</option></select>
     </div>
     <ul id="booklist"></ul>
-    <p class="hint">Books and images are kept in this browser (IndexedDB). Export a project file to back one up.</p>
+    <p class="hint">Your OpenRouter key and books stay in this browser (localStorage and IndexedDB); the key is only sent to openrouter.ai. Export a project file to back one up.</p>
     <input type="file" id="fileJson" accept=".json,application/json" multiple class="hidden">
     <input type="file" id="fileProject" accept=".json" class="hidden">
     <input type="file" id="fileImages" accept="image/*" multiple class="hidden">
     <input type="file" id="fileOne" accept="image/*" class="hidden">
   </aside>
-  <section id="editor"><div class="empty">Create a book or import one of <code>books/*.json</code>.</div></section>
+  <section id="editor"><div class="empty">Create a book, or pick one from "Load an example" to see how they are written.</div></section>
 </main>
 <div id="lightbox"><img alt=""><pre></pre></div>
 
@@ -394,6 +395,15 @@ $("#fileJson").onchange = async e => {
     catch (err) { alert(`${f.name}: ${err.message}`); }
   }
   e.target.value = ""; await refreshList(); if (last) openBook(last);
+};
+
+$("#example").onchange = async e => {
+  const slug = e.target.value; e.target.value = ""; if (!slug) return;
+  try {
+    const r = await fetch(`books/${slug}.json`); if (!r.ok) throw new Error(r.status);
+    if (await dbGet("books", slug) && !confirm(`"${slug}" is already here. Replace its text (images are kept)?`)) return;
+    await dbPut("books", slug, normalise(await r.json())); await refreshList(); openBook(slug);
+  } catch (err) { alert(`Could not load books/${slug}.json (${err.message}). Opened from disk? Use "Import book JSON" instead.`); }
 };
 
 /* project file = book JSON + every image as a data URL, for backup or moving between browsers */
