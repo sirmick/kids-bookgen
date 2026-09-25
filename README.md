@@ -9,7 +9,8 @@ Nano Banana (`google/gemini-3.1-flash-image`) on OpenRouter, about $0.07 each.
 Open `index.html` in Chrome or Firefox (double-click, or `xdg-open index.html`).
 
 1. Paste an OpenRouter key at the top (kept in this browser's localStorage).
-2. **New book**, or **Import book JSON** with any of `books/*.json`.
+2. **Load an example** (three come with finished pictures: farm, kittens, r01-sit-pip),
+   **New book**, or **Import book JSON** with any of `books/*.json`.
 3. Edit title, style, palette, character and the page text and image beats.
 4. **Generate missing**: character sheet(s) first, then cover and pages, which get the sheet(s) as references.
    Click an image to see its prompt; **Redo** regenerates one page.
@@ -31,5 +32,11 @@ Books and images live in the browser's IndexedDB. Use **Export project file** to
     python3 gen.py cast                  # reading-set reference sheets
     python3 gen.py package <slug>        # out/<slug> + work/<slug>/contact.png
 
-The key comes from `OPENROUTER_API_KEY` or `../openrouter.token`. `gen.py` also quantizes the PNGs
-to 256 colours, so its files are smaller than the browser's.
+The key comes from `OPENROUTER_API_KEY` or `../openrouter.token`.
+
+## Image sizes
+
+Device pages are WebP at quality 85, about 50 KB each (0.5–3 MB a book). The model returns PNG,
+and even these flat-looking pictures have ~40,000 colours from soft edges and grain, so a lossless
+page is 0.7–1 MB. `work/` (the model's originals) and `out/` are not in git; `examples/` holds three
+finished books as WebP for the web page.

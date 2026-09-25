@@ -100,7 +100,7 @@ td textarea { min-height: 40px; }
       <button class="primary" id="new">New book</button>
       <button id="importJson">Import book JSON…</button>
       <button id="importProject">Import project file…</button>
-      <select id="example"><option value="">Load an example…</option><option value="cascades">Goodnight, Mountain</option><option value="dogs">Goodnight, Dogs</option><option value="farm">Goodnight, Little Farm</option><option value="fireflies">The Firefly's Lantern</option><option value="fnq">Goodnight, Daintree</option><option value="garden">Goodnight, Little Garden</option><option value="kittens">Goodnight, Kittens</option><option value="r01-sit-pip">Sit, Pip</option><option value="r02-mim-is-a-cat">Mim Is a Cat</option><option value="r03-sam-the-dog">Sam the Dog</option><option value="r04-bob-and-the-box">Bob and the Box</option><option value="r05-chip-the-pup">Chip the Pup</option><option value="r06-spot-and-the-frog">Spot and the Frog</option><option value="r07-jack-can-run">Jack Can Run</option><option value="r08-max-is-not-big">Max Is Not Big</option><option value="r09-zip-is-fast">Zip Is Fast</option><option value="r10-the-big-nap">The Big Nap</option><option value="rainforest">Rainforest Lullaby</option><option value="reef">Down in the Sleepy Reef</option><option value="savanna">Goodnight, Big Savanna</option><option value="woodland">Olive Keeps Watch</option><option value="zoo">The Zoo Goes to Sleep</option></select>
+      <select id="example"><option value="">Load an example…</option><optgroup label="Finished, with pictures"><option value="farm">Goodnight, Little Farm</option><option value="kittens">Goodnight, Kittens</option><option value="r01-sit-pip">Sit, Pip</option></optgroup><optgroup label="Text only (generate the pictures)"><option value="cascades">Goodnight, Mountain</option><option value="dogs">Goodnight, Dogs</option><option value="fireflies">The Firefly's Lantern</option><option value="fnq">Goodnight, Daintree</option><option value="garden">Goodnight, Little Garden</option><option value="r02-mim-is-a-cat">Mim Is a Cat</option><option value="r03-sam-the-dog">Sam the Dog</option><option value="r04-bob-and-the-box">Bob and the Box</option><option value="r05-chip-the-pup">Chip the Pup</option><option value="r06-spot-and-the-frog">Spot and the Frog</option><option value="r07-jack-can-run">Jack Can Run</option><option value="r08-max-is-not-big">Max Is Not Big</option><option value="r09-zip-is-fast">Zip Is Fast</option><option value="r10-the-big-nap">The Big Nap</option><option value="rainforest">Rainforest Lullaby</option><option value="reef">Down in the Sleepy Reef</option><option value="savanna">Goodnight, Big Savanna</option><option value="woodland">Olive Keeps Watch</option><option value="zoo">The Zoo Goes to Sleep</option></optgroup></select>
     </div>
     <ul id="booklist"></ul>
     <p class="hint">Your OpenRouter key and books stay in this browser (localStorage and IndexedDB); the key is only sent to openrouter.ai. Export a project file to back one up.</p>
@@ -316,19 +316,26 @@ async function processForDevice(blob) {
     for (let i = ch; i < d.length; i += 4) d[i] = lut[d[i]];
   }
   g.putImageData(id, 0, 0);
-  return c.convertToBlob({ type: "image/png" });
+  // WebP is ~15x smaller than PNG for these pictures; Safari cannot encode WebP, so it gets JPEG
+  const webp = await c.convertToBlob({ type: "image/webp", quality: 0.85 });
+  return webp.type === "image/webp" ? webp : c.convertToBlob({ type: "image/jpeg", quality: 0.9 });
 }
 
-function manifest() {
-  const have = pageKeys(book).filter(k => k && imgs[k]);
-  return { slug: book.slug, title: book.title, set: isReading(book) ? "reading" : "bedtime", cover: "cover.png",
-           pages: book.pages.filter(p => have.includes(p.n)).map(p =>
-             ({ n: p.n, image: fname(p.n), text: p.text, text_pos: p.text_pos, word: p.word || "" })) };
+function manifest(names) {
+  return { slug: book.slug, title: book.title, set: isReading(book) ? "reading" : "bedtime", cover: names[0] || "cover.webp",
+           pages: book.pages.filter(p => names[p.n]).map(p =>
+             ({ n: p.n, image: names[p.n], text: p.text, text_pos: p.text_pos, word: p.word || "" })) };
 }
 
 async function deviceFiles() {
-  const files = [["book.json", new Blob([JSON.stringify(manifest(), null, 1)], { type: "application/json" })]];
-  for (const k of pageKeys(book)) if (imgs[k]) { log(`processing ${label(k)}…`); files.push([fname(k), await processForDevice(imgs[k].blob)]); }
+  const files = [], names = {};
+  for (const k of pageKeys(book)) if (imgs[k]) {
+    log(`processing ${label(k)}…`);
+    const blob = await processForDevice(imgs[k].blob);
+    names[k] = fname(k).replace(/png$/, blob.type === "image/webp" ? "webp" : "jpg");
+    files.push([names[k], blob]);
+  }
+  files.unshift(["book.json", new Blob([JSON.stringify(manifest(names), null, 1)], { type: "application/json" })]);
   return files;
 }
 
@@ -397,12 +404,28 @@ $("#fileJson").onchange = async e => {
   e.target.value = ""; await refreshList(); if (last) openBook(last);
 };
 
+let exIdx;
+const exampleIndex = async () => exIdx ||= await fetch("examples/index.json").then(r => r.json()).catch(() => ({ books: {}, cast: {} }));
 $("#example").onchange = async e => {
   const slug = e.target.value; e.target.value = ""; if (!slug) return;
   try {
     const r = await fetch(`books/${slug}.json`); if (!r.ok) throw new Error(r.status);
-    if (await dbGet("books", slug) && !confirm(`"${slug}" is already here. Replace its text (images are kept)?`)) return;
-    await dbPut("books", slug, normalise(await r.json())); await refreshList(); openBook(slug);
+    const ex = (await exampleIndex()).books[slug];
+    if (await dbGet("books", slug) && !confirm(`"${slug}" is already here. Replace its text${ex ? " and pictures" : " (pictures are kept)"}?`)) return;
+    const b = normalise(await r.json());
+    await dbPut("books", slug, b);
+    if (ex) {
+      $("#editor").innerHTML = `<div class="empty">Loading pictures…</div>`;
+      const get = async (path, key, meta) => {
+        const res = await fetch(path); if (res.ok) await dbPut("images", key, { cost: 0, model: "", refs: [], seconds: 0, prompt: "(example)", ...meta, blob: await res.blob() });
+      };
+      await Promise.all(Object.entries(ex).map(([stem, meta]) => get(`examples/${slug}/${stem}.webp`, `${slug}/${stem}.png`, meta)));
+      const cast = (await exampleIndex()).cast;
+      await Promise.all(b.cast.filter(m => m in cast).map(async m => {
+        if (!await dbGet("images", `cast/${m}.png`)) await get(`examples/cast/${m}.webp`, `cast/${m}.png`, {});
+      }));
+    }
+    await refreshList(); openBook(slug);
   } catch (err) { alert(`Could not load books/${slug}.json (${err.message}). Opened from disk? Use "Import book JSON" instead.`); }
 };
 
@@ -503,7 +526,7 @@ function render() {
       <button id="proj">Export project file</button>
       <button id="del" class="danger">Delete book</button>
     </div>
-    <p class="hint">The device folder holds <code>book.json</code>, <code>cover.png</code> and <code>p01…</code> at ${W}×${H}.
+    <p class="hint">The device folder holds <code>book.json</code>, <code>cover.webp</code> and <code>p01.webp…</code> at ${W}×${H} (JPEG in Safari).
       Unzip into <code>book-generator/out/</code> and run <code>../nighttime-books/push.sh ${esc(book.slug)}</code>.</p>
     <pre id="log"></pre>
   </fieldset>`;

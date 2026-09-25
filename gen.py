@@ -7,7 +7,7 @@
 
 Layout:  books/<slug>.json (from plan2json.py)
          work/<slug>/raw/{char,cover,p01..p12}.png   raw model output + log.json
-         out/<slug>/{book.json,cover.png,p01..p12.png} device folder, 1072x1448
+         out/<slug>/{book.json,cover.webp,p01..p12.webp} device folder, 1072x1448, WebP q85 (~50 KB a page)
          work/<slug>/contact.png                      review sheet
 """
 import sys, os, re, json, base64, time, argparse, pathlib, io
@@ -102,8 +102,11 @@ def cast_prompts(book):
     return out
 
 
-def fname(key):
-    return "char.png" if key == "char" else ("cover.png" if key == 0 else f"p{key:02d}.png")
+def fname(key, ext="png"):
+    return ("char" if key == "char" else "cover" if key == 0 else f"p{key:02d}") + "." + ext
+
+
+WEBP_QUALITY = 85   # lossless PNG of these "flat" images is ~15x bigger: soft edges and grain give ~40k colours
 
 
 def build(slug, only=None, force=False, model=MODEL):
@@ -188,26 +191,26 @@ def cast_sheets(force=False, model=MODEL):
 def process(png_path):
     im = Image.open(png_path).convert("RGB")
     im = ImageOps.fit(im, (W, H), Image.LANCZOS)          # 896x1200 -> 1072x1448, crop if ratio drifts
-    im = ImageOps.autocontrast(im, cutoff=0.5)
-    return im.quantize(256, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.FLOYDSTEINBERG)
+    return ImageOps.autocontrast(im, cutoff=0.5)
 
 
 def package(slug):
     book = json.load(open(HERE / "books" / f"{slug}.json"))
     raw = HERE / "work" / slug / "raw"; out = HERE / "out" / slug; out.mkdir(parents=True, exist_ok=True)
+    for old in out.glob("*.png"): old.unlink()   # older packages used PNG
     pages = []
     thumbs = []
     for k in [0] + [p["n"] for p in book["pages"]]:
         src = raw / fname(k)
         if not src.exists():
             print(f"  missing {src}"); continue
-        im = process(src); im.save(out / fname(k), optimize=True)
+        im = process(src); im.save(out / fname(k, "webp"), quality=WEBP_QUALITY, method=6)
         thumbs.append(im.convert("RGB"))
         if k:
             p = book["pages"][k - 1]
-            pages.append({"n": k, "image": fname(k), "text": p["text"], "text_pos": p["text_pos"], "word": p.get("word", "")})
+            pages.append({"n": k, "image": fname(k, "webp"), "text": p["text"], "text_pos": p["text_pos"], "word": p.get("word", "")})
     manifest = {"slug": slug, "title": book["title"], "set": "reading" if book.get("cast") else "bedtime",
-                "cover": "cover.png", "pages": pages}
+                "cover": "cover.webp", "pages": pages}
     json.dump(manifest, open(out / "book.json", "w"), indent=1, ensure_ascii=False)
     # contact sheet: 4 columns
     if thumbs:
