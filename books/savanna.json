@@ -1,0 +1,84 @@
+{
+ "slug": "savanna",
+ "title": "Goodnight, Big Savanna",
+ "character": "Zizi, a small grey baby elephant with big ears and a short trunk, always near Mama, a big grey elephant. Both elephants are grey.",
+ "refrain": "\"Time to sleep,\" says Mama.",
+ "palette": "gold, peach, dusty rose, olive green, warm grey.",
+ "sky": "big red-gold sun → dusty rose → pale night full of stars.",
+ "cover": "Zizi under Mama's trunk, flat-topped acacia, big sun.",
+ "style": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The sun sinks red and round over the savanna. Zizi the elephant flaps her ears.",
+   "beat": "Zizi and Mama, both grey, standing in front of a big red-gold sun.",
+   "text_pos": "top"
+  },
+  {
+   "n": 2,
+   "text": "\"Time to sleep,\" says Mama. \"Not yet!\" says Zizi.",
+   "beat": "Zizi looking up at Mama, trunk raised.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The zebras stand close together, stripes and stripes and stripes.",
+   "beat": "Group of zebras standing close, heads down, Zizi and grey Mama watching from the side.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The giraffe bends down to say goodnight to the little acacia tree.",
+   "beat": "Giraffe head beside a small tree.",
+   "text_pos": "top"
+  },
+  {
+   "n": 5,
+   "text": "The lion cubs tumble and roll, then flop down, tired out.",
+   "beat": "Three cubs in a heap in the grass.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The meerkats go down, down, down into their burrow.",
+   "beat": "Meerkats disappearing into a hole one by one.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The warthog family trots home in a line, tails up.",
+   "beat": "Four warthogs in a line, tails straight up.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The rhino stands still as a rock in the tall grass.",
+   "beat": "Rhino in long grass, dusty-rose sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The stars come out, one for every animal.",
+   "beat": "Wide sky with scattered stars, animals small below.",
+   "text_pos": "top"
+  },
+  {
+   "n": 10,
+   "text": "\"Time to sleep,\" says Mama. \"Okay,\" says Zizi, with a big yawn.",
+   "beat": "Zizi mid-yawn.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "text": "Zizi leans on Mama's warm, wrinkly leg.",
+   "beat": "Zizi against Mama's leg, eyes closing.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "The whole savanna sleeps under a sky full of stars. Goodnight, Zizi.",
+   "beat": "Zizi and Mama asleep together under the acacia tree, stars everywhere.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "slug": "r06-spot-and-the-frog",
+ "title": "Spot and the Frog",
+ "character": "Tip, a small ginger kitten with white paws and big round eyes. Mim, a small grey tabby kitten with dark stripes, white paws and green eyes. Spot, a white dalmatian with black spots.",
+ "cast": [
+  "Tip",
+  "Mim",
+  "Spot"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Spot the dalmatian. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Spot",
+   "text": "Spot.",
+   "beat": "Spot the dalmatian.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "spot",
+   "text": "Spot has a spot.",
+   "beat": "Spot looking at one big round spot on her leg.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "frog",
+   "text": "A frog!",
+   "beat": "A green frog on a lily pad, Spot surprised.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "jump",
+   "text": "Jump, frog, jump.",
+   "beat": "The frog mid-leap.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "pond",
+   "text": "The frog is in the pond.",
+   "beat": "A small pond, frog's head above the water, Spot at the edge.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "drip",
+   "text": "Drip, drip, drip.",
+   "beat": "Spot soaked and dripping after jumping in.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "nest",
+   "text": "Tip sat in the nest.",
+   "beat": "Tip curled in an empty bird's nest on a low branch.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "milk",
+   "text": "Milk! Tip ran to the milk.",
+   "beat": "Tip running to a saucer of milk.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "lamp",
+   "text": "Mim sat on the lamp.",
+   "beat": "Mim perched on top of a lampshade.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "sand",
+   "text": "Spot is in the sand.",
+   "beat": "Spot digging in a sandpit, sand flying.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Spot has a spot. She is in the pond. Drip, drip.",
+   "beat": "Spot standing in the pond.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Spot. Nap in the sand.",
+   "beat": "Spot asleep in the sand, the frog asleep on a rock.",
+   "text_pos": "bottom"
+  }
+ ]
+}

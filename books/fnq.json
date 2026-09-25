@@ -1,0 +1,84 @@
+{
+ "slug": "fnq",
+ "title": "Goodnight, Daintree",
+ "character": "Tilly, a small Lumholtz's tree-kangaroo with a reddish-brown coat, a long thick tail, round ears and a black face and paws.",
+ "refrain": "Goodnight from the treetops.",
+ "palette": "rainforest green, turquoise, coral, sandy gold, plum.",
+ "sky": "gold tropical sunset → coral pink → warm lavender night with a big moon over the sea.",
+ "cover": "Tilly on a high branch where the rainforest meets the beach and the turquoise reef.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in loose watercolour and ink: confident brown-black ink line drawings with soft translucent watercolour washes that do not always stay inside the lines, white paper showing through, a limited palette of five muted colours plus paper white, a little granulation texture, no digital gradients, no photorealism. Backgrounds are light and airy with plenty of untouched paper. Dark tones only in the ink line and small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "Where the rainforest runs right down to the sea, the day is ending. Tilly the tree-kangaroo yawns high in her tree.",
+   "beat": "Tilly on a branch, sea and reef beyond, gold sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The cassowary walks her chicks home through the ferns, one slow step at a time.",
+   "beat": "Tall cassowary with three striped chicks among ferns, Tilly watching from above.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The kookaburras have one last laugh. Then, quiet.",
+   "beat": "Two kookaburras on a branch, beaks open, Tilly beside them.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The green tree frogs sit in a row on a big leaf, plump and still.",
+   "beat": "Three plump green frogs on one leaf, Tilly peeking over.",
+   "text_pos": "top"
+  },
+  {
+   "n": 5,
+   "text": "The flying foxes wake up! They stretch their wings and flap off to find fruit.",
+   "beat": "Fruit bats leaving a fig tree against a pink sky, Tilly below.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The turtle crawls up the beach to dig her nest in the warm sand.",
+   "beat": "Sea turtle on pale sand, moon over the water.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The blue Ulysses butterfly folds his bright wings shut and looks just like a brown leaf.",
+   "beat": "Big blue butterfly closing its wings on a branch next to Tilly.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The possum peeks out of her hollow, ready for a night of climbing.",
+   "beat": "Possum in a tree hollow, Tilly on the branch outside.",
+   "text_pos": "top"
+  },
+  {
+   "n": 9,
+   "text": "Down on the reef, the little fish snuggle into their coral for the night.",
+   "beat": "Pale reef seen from the shore, small fish among coral, moon above.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "Tilly climbs down, and down, and down to her sleeping branch.",
+   "beat": "Tilly climbing down a tall trunk, moon between the leaves.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "The rain comes, warm and soft, tapping on a million leaves.",
+   "beat": "Tilly curled under a big leaf, gentle rain.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Goodnight, rainforest. Goodnight, reef. Goodnight, Tilly.",
+   "beat": "Wide view from the treetops down to the beach and reef, Tilly asleep on her branch.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "reef",
+ "title": "Down in the Sleepy Reef",
+ "character": "Coral, a small orange clownfish with three white stripes and big round eyes.",
+ "refrain": "Sway, sway, sway.",
+ "palette": "turquoise, coral pink, sunny yellow, seagrass green, soft purple.",
+ "sky": "pale turquoise → lavender-blue lit by moon ripples. Never deep dark water.",
+ "cover": "Coral peeking out of her anemone, reef around her.",
+ "style": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The sun sets on the sea. Down below, the reef glows soft and blue.",
+   "beat": "Surface with orange sun above, pale reef below.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "Coral the clownfish wriggles into her anemone. Sway, sway, sway.",
+   "beat": "Coral snug in a pink anemone.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The seahorse wraps his tail around a seagrass stem and closes his eyes.",
+   "beat": "Seahorse on seagrass, Coral watching.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The turtle drifts by, slow and sleepy, going home.",
+   "beat": "Green turtle gliding, Coral small below.",
+   "text_pos": "top"
+  },
+  {
+   "n": 5,
+   "text": "The crab scuttles into a shell and pulls the door shut.",
+   "beat": "Hermit crab half inside a spiral shell.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The parrotfish blows a soft bubble blanket and snuggles inside.",
+   "beat": "Parrotfish inside a see-through bubble.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The octopus turns from red to grey and tucks all eight arms in.",
+   "beat": "Octopus balled up in a rocky nook.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The starfish holds on tight to a rock. Goodnight, starfish.",
+   "beat": "Starfish on a rounded rock, Coral beside.",
+   "text_pos": "top"
+  },
+  {
+   "n": 9,
+   "text": "A school of tiny silver fish flickers past, then goes still.",
+   "beat": "Small silver fish in a loose cloud.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon shines down through the water in silver ripples.",
+   "beat": "Moon seen from below through rippling water.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "The reef is quiet. Only the sea says shhh, shhh.",
+   "beat": "Wide quiet reef, everyone in their places.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Coral yawns a tiny bubble. Sway, sway, sway. Goodnight, reef.",
+   "beat": "Coral asleep in the anemone, one small bubble rising.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "fireflies",
+ "title": "The Firefly's Lantern",
+ "character": "Flick, a small firefly with a brown body, big kind eyes and a soft yellow glow at the tip of his tail.",
+ "refrain": "Flick lights the way.",
+ "palette": "lavender, dusky blue, glow yellow, moss green, soft brown.",
+ "sky": "peach → lavender → dusky blue. The sky is never black or navy; night is shown as pale lavender.",
+ "cover": "Flick glowing above a pond at twilight, his light reflected in the water.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in soft coloured pencil: visible pencil strokes and gentle hatching, rounded shapes, warm paper grain showing through, thin dark-brown pencil outlines, a limited palette of five muted colours plus cream, no digital gradients, no photorealism. Backgrounds are pale lavender or cream, never black or navy, even at night; glowing things are drawn as pale yellow halos on a light sky. Dark tones only in outlines and small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "When the sun goes down, Flick the firefly wakes up. His little lantern blinks on.",
+   "beat": "Flick on a blade of grass, tail glowing, peach sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The moth flutters to the porch light, then finds a leaf to rest on. Flick lights the way.",
+   "beat": "Soft brown moth settling on a leaf near a glowing porch lamp, Flick beside it.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The crickets tune up: chirp, chirp, chirp, all along the fence.",
+   "beat": "Three crickets on a wooden fence rail, Flick hovering.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The jumping spider in the fence post says goodnight with a wave of two tiny legs. Flick blinks back.",
+   "beat": "Cute fuzzy jumping spider with big round eyes waving from a knot hole, Flick glowing nearby.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "The ladybugs are already asleep under a leaf, a little row of red buttons.",
+   "beat": "Row of ladybugs under a leaf, Flick's glow lighting them.",
+   "text_pos": "top"
+  },
+  {
+   "n": 6,
+   "text": "The beetle trundles home along the path. Flick lights the way.",
+   "beat": "Round beetle on a garden path, Flick flying ahead with his light.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The bees are all inside the hive, humming one low, sleepy hum.",
+   "beat": "Wooden beehive with a few bees at the door, Flick outside, lavender sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The glow-worms in the bank turn on their tiny lights, one by one.",
+   "beat": "Mossy bank with small pale green glows, Flick above.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The katydid sings her last song and goes quiet in the hedge.",
+   "beat": "Leaf-green katydid on a hedge leaf, Flick beside her.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon comes up. Now the whole garden has a lantern.",
+   "beat": "Big moon over the garden, Flick small in the middle.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Flick's friends blink back at him from the trees: on, off, on, off.",
+   "beat": "Several fireflies as soft yellow dots among tree leaves, Flick in front.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Flick settles on a blade of grass, his lantern fading soft and slow. Goodnight, Flick.",
+   "beat": "Flick asleep on a grass blade, faint glow, pale lavender night.",
+   "text_pos": "bottom"
+  }
+ ]
+}

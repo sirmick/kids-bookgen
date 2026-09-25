@@ -1,0 +1,84 @@
+{
+ "slug": "cascades",
+ "title": "Goodnight, Mountain",
+ "character": "Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears.",
+ "refrain": "whistles Marlo.",
+ "palette": "fir green, slate blue, ochre, rust, cream snow.",
+ "sky": "gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).",
+ "cover": "Marlo standing up on a boulder in an alpine meadow, a snowy peak behind.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The sun slides behind the mountain, and the snowy peak glows pink. Marlo the marmot stands up on his rock to look.",
+   "beat": "Marlo upright on a boulder, pink-lit snowy peak, fir trees.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "\"Time for bed!\" whistles Marlo. The whistle bounces off the mountain and comes back.",
+   "beat": "Marlo whistling, small sound marks echoing off the peak.",
+   "text_pos": "top"
+  },
+  {
+   "n": 3,
+   "text": "The black bear and her cub amble back to their den under the roots.",
+   "beat": "Mother bear and cub walking toward a den beneath a big fir, Marlo watching.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The mountain goats settle on a high ledge, white against the grey rock.",
+   "beat": "Two white mountain goats on a ledge, Marlo far below.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "The pika stacks his last pile of grass and squeaks goodnight.",
+   "beat": "Small round pika beside a haystack in the rocks, Marlo beside him.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The elk lie down in the meadow, antlers tall against the sky.",
+   "beat": "Three elk lying in a meadow, lavender sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The chipmunks scurry into their burrow with cheeks full of seeds.",
+   "beat": "Two chipmunks at a burrow under a log, Marlo nearby.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "Down in the creek, the salmon rest in the quiet pools.",
+   "beat": "Clear creek with two salmon in a still pool, Marlo on the bank.",
+   "text_pos": "top"
+  },
+  {
+   "n": 9,
+   "text": "The grey jay tucks her head under her wing in the fir tree.",
+   "beat": "Grey jay on a fir branch, head tucked, Marlo below.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The stars come out over the peak, more and more and more.",
+   "beat": "Snowy peak with a pale indigo sky full of stars, Marlo small on his rock.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Marlo squeezes into the burrow with all his brothers and sisters.",
+   "beat": "Burrow entrance in the rocks with a pile of sleepy marmots.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "The whole mountain sleeps under the snow-topped peak. Goodnight, Marlo.",
+   "beat": "Wide mountain view, meadow, firs, peak, stars, Marlo asleep in the burrow mouth.",
+   "text_pos": "bottom"
+  }
+ ]
+}

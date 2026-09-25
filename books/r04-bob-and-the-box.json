@@ -1,0 +1,102 @@
+{
+ "slug": "r04-bob-and-the-box",
+ "title": "Bob and the Box",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. Bob, a stocky wrinkly tan bulldog with a black nose.",
+ "cast": [
+  "Pip",
+  "Tip",
+  "Bob"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Bob the wrinkly bulldog. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Bob",
+   "text": "Bob.",
+   "beat": "Bob the wrinkly bulldog.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "box",
+   "text": "A big box.",
+   "beat": "Bob beside a big cardboard box.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "get",
+   "text": "Get in the box, Bob.",
+   "beat": "Bob with his front paws in the box.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "fit",
+   "text": "Fit, Bob, fit!",
+   "beat": "Bob squeezing into the box, bottom sticking out.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "yes",
+   "text": "Yes! Bob is in the box.",
+   "beat": "Bob sitting in the box, delighted.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "wag",
+   "text": "Wag, wag, wag.",
+   "beat": "Bob's tail wagging above the edge of the box.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "jam",
+   "text": "Jam on Pip.",
+   "beat": "Pip with red jam on his nose, a jar beside him.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "hop",
+   "text": "Hop, Tip, hop.",
+   "beat": "Tip hopping toward the box.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "top",
+   "text": "Tip is on the top of the box.",
+   "beat": "Tip perched on the box flap.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "",
+   "text": "Pip ran to the box.",
+   "beat": "Pip running to the box, jam still on his nose.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Bob is in the box. Tip is on the top. Pip sat.",
+   "beat": "All three at the box.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Bob. Nap in the box.",
+   "beat": "Bob asleep in the box, Tip asleep on top.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "zoo",
+ "title": "The Zoo Goes to Sleep",
+ "character": "Milo, a small meerkat with a dark eye-mask and a curious upright stance.",
+ "refrain": "Shh. Sleepy time.",
+ "palette": "lavender, sand yellow, teal, terracotta, warm grey.",
+ "sky": "sand-gold dusk → lavender → soft night, round lamps along the paths.",
+ "cover": "Milo standing tall on a rock in front of the closed zoo gate.",
+ "style": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The zoo gates close with a click. Milo the meerkat stands up tall to look.",
+   "beat": "Iron gate closing, Milo on a rock, sand-gold sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The elephants sway and hum a low, slow song. Shh. Sleepy time.",
+   "beat": "Two elephants leaning together, trunks curled.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The giraffes fold their long, long legs. Shh. Sleepy time.",
+   "beat": "Two giraffes sitting down, necks curved.",
+   "text_pos": "top"
+  },
+  {
+   "n": 4,
+   "text": "The lions yawn big, gold yawns. Then they flop down in a heap.",
+   "beat": "Lion family in a pile on a warm rock.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "The penguins huddle close, close, close.",
+   "beat": "Cluster of penguins, teal pool behind.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The monkeys stop swinging. They hang in the tree, quiet at last.",
+   "beat": "Three monkeys still in a tree, ropes hanging.",
+   "text_pos": "top"
+  },
+  {
+   "n": 7,
+   "text": "The hippo sinks into the warm water until only two ears show.",
+   "beat": "Pool, two hippo ears and eyes above the surface.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The parrots tuck their bright feathers away.",
+   "beat": "Row of parrots on a perch, heads under wings.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The tortoise pulls his head in. Goodnight, tortoise.",
+   "beat": "One big tortoise, head half inside the shell, Milo beside.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The night lamps glow along the empty path.",
+   "beat": "Curving zoo path, round lamps, lavender night, Milo walking.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "text": "Milo scurries home to his burrow and his brothers and sisters.",
+   "beat": "Meerkat burrow entrance, sleepy meerkat faces peeking out.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Everyone in the zoo is asleep. Shh. Sleepy time, Milo.",
+   "beat": "Milo curled up in the burrow, moon through the entrance.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "dogs",
+ "title": "Goodnight, Dogs",
+ "character": "Biscuit, a small corgi puppy with a golden-and-white coat, big pointy ears, short legs and a white blaze down his nose.",
+ "refrain": "Woof, goodnight.",
+ "palette": "mustard, teal, terracotta, cream, warm brown.",
+ "sky": "gold → coral → lavender, round street lamps glowing.",
+ "cover": "Biscuit sitting on a doorstep on a street of small friendly houses, lamps coming on.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in the manner of a 1950s picture-book lithograph: soft grainy crayon-like texture, flat colour areas with slightly loose registration, simple friendly rounded shapes, a thin warm-brown line, a limited palette of five muted colours plus cream, no gradients, no photorealism. Backgrounds are cream and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "Down on Bone Street, the lamps come on. Biscuit the corgi puppy trots along to say goodnight.",
+   "beat": "Biscuit trotting down a street of small houses, gold sky, lamps lit.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The old yellow labrador is asleep on the porch. Woof, goodnight.",
+   "beat": "Big yellow labrador asleep on a wooden porch, Biscuit at the steps.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The dalmatian counts her spots, then curls up in her basket.",
+   "beat": "Spotted dalmatian curling into a basket, Biscuit watching at the door.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The pug snores in his little bed. Snort, snuffle, snore.",
+   "beat": "Small wrinkly fawn pug asleep in a tiny bed, Biscuit peeking in a window.",
+   "text_pos": "top"
+  },
+  {
+   "n": 5,
+   "text": "The poodle has her curls brushed, then flops on the rug.",
+   "beat": "Curly white poodle flopped on a round rug, a brush beside her, Biscuit in the doorway.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The dachshund is so long he needs two pillows.",
+   "beat": "Long brown dachshund stretched over two pillows, Biscuit beside him.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The husky sleeps outside under the stars, nose in his tail.",
+   "beat": "Grey-and-white husky curled in a yard, lavender sky with stars, Biscuit at the fence.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The sheepdog dreams of sheep. His paws twitch. Run, run, run.",
+   "beat": "Shaggy old English sheepdog asleep, small dream sheep above him, Biscuit watching.",
+   "text_pos": "top"
+  },
+  {
+   "n": 9,
+   "text": "The greyhound folds herself up small in a big soft chair.",
+   "beat": "Slim grey greyhound curled tight in an armchair, Biscuit on the floor.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon comes up over the roofs of Bone Street.",
+   "beat": "Row of rooftops and chimneys with a big moon, Biscuit small on the pavement.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Biscuit trots home, tired paws going pat, pat, pat.",
+   "beat": "Biscuit walking home under a street lamp, ears drooping.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Biscuit curls up in his basket by the door. Woof, goodnight, everyone.",
+   "beat": "Biscuit asleep in a basket by a front door, moon through the window.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "slug": "r08-max-is-not-big",
+ "title": "Max Is Not Big",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. Mim, a small grey tabby kitten with dark stripes, white paws and green eyes. Sam, a very big shaggy grey-and-white old English sheepdog with hair over his eyes. Bob, a stocky wrinkly tan bulldog with a black nose. Max, a fawn pug with a black face and curly tail.",
+ "cast": [
+  "Pip",
+  "Tip",
+  "Mim",
+  "Sam",
+  "Bob",
+  "Max"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Max the pug. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Max",
+   "text": "Max.",
+   "beat": "Max the pug.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "not",
+   "text": "Max is not big.",
+   "beat": "Max next to huge Sam.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "bed",
+   "text": "Max has a bed.",
+   "beat": "Max beside a small round dog bed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "soft",
+   "text": "The bed is soft.",
+   "beat": "Max sinking into the bed, blissful.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "rest",
+   "text": "Rest, Max, rest.",
+   "beat": "Max lying in the bed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "snug",
+   "text": "Max is snug in the bed.",
+   "beat": "Max tucked in with a blanket.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "bump",
+   "text": "Bump! Bob is on the bed.",
+   "beat": "Bob landing on the bed, Max squashed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "then",
+   "text": "Then Tip. Then Mim. Then Pip.",
+   "beat": "Tip, Mim and Pip piling onto the bed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "shift",
+   "text": "Shift, Bob, shift.",
+   "beat": "Bob shuffling over on the bed to make room, Max, Tip, Mim and Pip squeezed beside him.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "",
+   "text": "We fit! Yes, we fit.",
+   "beat": "Max, Bob, Tip, Mim and Pip all together on one bed, squashed and happy.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "The bed is soft. Max is snug.",
+   "beat": "Bob, Tip, Mim and Pip piled on the bed, Max at the bottom smiling.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Max. Nap, Bob, Tip, Mim and Pip.",
+   "beat": "All asleep in a heap on the bed.",
+   "text_pos": "bottom"
+  }
+ ]
+}

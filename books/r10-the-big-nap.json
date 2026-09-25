@@ -1,0 +1,109 @@
+{
+ "slug": "r10-the-big-nap",
+ "title": "The Big Nap",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. Mim, a small grey tabby kitten with dark stripes, white paws and green eyes. Sam, a very big shaggy grey-and-white old English sheepdog with hair over his eyes. Bob, a stocky wrinkly tan bulldog with a black nose. Chip, a tiny tan chihuahua with huge ears. Spot, a white dalmatian with black spots. Jack, a small white jack russell terrier with a brown patch over one eye. Max, a fawn pug with a black face and curly tail. Zip, a slim grey greyhound with a long nose.",
+ "cast": [
+  "Pip",
+  "Tip",
+  "Mim",
+  "Sam",
+  "Bob",
+  "Chip",
+  "Spot",
+  "Jack",
+  "Max",
+  "Zip"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "A big sun over a garden, Pip and Tip small below. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "sun",
+   "text": "The sun.",
+   "beat": "A big sun over a garden, Pip and Tip small below.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "hot",
+   "text": "The sun is hot.",
+   "beat": "Pip panting under the sun.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "shed",
+   "text": "Pip is in the shed.",
+   "beat": "Pip lying in the shade of a shed doorway.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "fan",
+   "text": "Mim and the fan.",
+   "beat": "Mim in front of a small fan, fur blowing.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "swim",
+   "text": "Spot can swim.",
+   "beat": "Spot swimming in the pond.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "splash",
+   "text": "Splash!",
+   "beat": "Jack jumping into the pond, big splash.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "wet",
+   "text": "Jack is wet. Spot is wet.",
+   "beat": "Both dripping at the pond edge.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "dusk",
+   "text": "Dusk. The sun is not hot.",
+   "beat": "Low sun, lavender sky, the garden.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "all",
+   "text": "All sat. Sam, Bob, Chip, Spot, Jack, Max, Zip and Pip.",
+   "beat": "Eight dogs in a row on the grass.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "still",
+   "text": "Still, still, still.",
+   "beat": "Sam, Bob, Spot and Jack lying still on the grass, Tip and Mim curled among them.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Tip is on Sam. Mim is on Bob. Pip is on the rug.",
+   "beat": "The cats asleep on the dogs.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, all. Nap in the dusk.",
+   "beat": "Sam, Bob, Chip, Spot, Jack, Max, Zip, Pip, Tip and Mim all asleep together on the grass at dusk.",
+   "text_pos": "bottom"
+  }
+ ]
+}

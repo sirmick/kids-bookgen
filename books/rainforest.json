@@ -1,0 +1,84 @@
+{
+ "slug": "rainforest",
+ "title": "Rainforest Lullaby",
+ "character": "Sunny, a small bright-green tree frog with orange toes and big gold eyes.",
+ "refrain": "Then, quiet.",
+ "palette": "leaf green, lime, orange, magenta, cocoa brown.",
+ "sky": "pale peach light between leaves → soft purple → pale rainy night. Keep the canopy open and airy, not dense.",
+ "cover": "Sunny on a big leaf, toucan and moon behind.",
+ "style": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "High in the rainforest, the day is done. Sunny the tree frog sits on his leaf.",
+   "beat": "Sunny on a wide leaf, peach light.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The toucan clacks her big bright beak one last time. Then, quiet.",
+   "beat": "Toucan on a branch, beak closing.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The monkeys chatter and swing and chatter. Then, quiet.",
+   "beat": "Two small monkeys settling on a vine.",
+   "text_pos": "top"
+  },
+  {
+   "n": 4,
+   "text": "The sloth moves slow, slower, slowest. Then, stop.",
+   "beat": "Sloth hanging from a branch, eyes closed.",
+   "text_pos": "top"
+  },
+  {
+   "n": 5,
+   "text": "The parrots squawk goodnight to each other, all at once.",
+   "beat": "Three parrots in a row, beaks open.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The jaguar cub curls up on a wide branch and licks her paw.",
+   "beat": "Spotted cub on a thick branch.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "The butterflies fold their wings under the leaves.",
+   "beat": "Butterflies under a leaf, wings closed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The rain starts, soft as a whisper, drip, drip, drip.",
+   "beat": "Rain drops on leaves, Sunny sheltering.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The fireflies blink on, blink off, blink on, blink off.",
+   "beat": "Small yellow dots among the leaves, purple sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon peeks through the tallest trees.",
+   "beat": "Moon between tall trunks.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Sunny closes one eye. Then the other.",
+   "beat": "Close-up of Sunny, one eye open.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "The whole rainforest sleeps under the soft, soft rain. Goodnight, Sunny.",
+   "beat": "Wide view, everyone asleep in the trees, gentle rain.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "garden",
+ "title": "Goodnight, Little Garden",
+ "character": "Dot, a small round red ladybug with seven black spots, a shiny shell and a friendly face.",
+ "refrain": "Goodnight, little friend.",
+ "palette": "leaf green, rose, buttercup yellow, sky blue, soft brown.",
+ "sky": "golden afternoon → peach dusk → lavender evening.",
+ "cover": "Dot on the tip of a big leaf in a garden full of flowers.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in painted-paper collage: every shape is a piece of hand-painted textured paper with visible brush marks and torn or cut edges, layered on a cream paper background, a limited palette of five muted colours plus cream, no outlines, no gradients, no photorealism. Backgrounds are mostly plain cream paper with a few large simple shapes. Dark colours only in small pieces, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The garden is warm and gold. Dot the ladybug climbs to the very top of a leaf.",
+   "beat": "Dot on a leaf tip, flowers behind, golden light.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The bumblebee drops into a flower, buzzing slower and slower. Goodnight, little friend.",
+   "beat": "Round fuzzy bumblebee inside a big pink flower, Dot on a nearby leaf.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The garden spider finishes her web, sits in the middle and folds her legs. She is gentle, and very proud of her web.",
+   "beat": "Friendly smiling orb-weaver spider in a neat round web with dew, Dot watching.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The snail slides home under the mint leaves, carrying his house on his back.",
+   "beat": "Snail with a spiral shell under leaves, Dot beside him.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "The ants march in a line back into their hill, the very last one carrying a crumb.",
+   "beat": "Line of ants entering an anthill, Dot on a stone.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The caterpillar curls up on a cabbage leaf, full and sleepy.",
+   "beat": "Striped caterpillar curled on a big leaf, Dot nearby.",
+   "text_pos": "top"
+  },
+  {
+   "n": 7,
+   "text": "The dragonfly lands on the pond reed and rests her four wings.",
+   "beat": "Dragonfly on a reed over a small pond, Dot on a lily pad.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The grasshopper does one last hop, then sits still in the grass.",
+   "beat": "Green grasshopper in tall grass, peach sky, Dot on a blade.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The butterfly folds her wings under a rose petal.",
+   "beat": "Butterfly with closed wings under a rose, Dot on the stem.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The earthworm wriggles down into the cool soft soil. Goodnight, little friend.",
+   "beat": "Cross-section of soft brown soil with a smiling worm, grass on top and Dot alone on a blade of grass, only one ladybug.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Dew drops settle on the web, on the leaves, on Dot.",
+   "beat": "Close-up of Dot with round dew drops on leaves, lavender sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "Dot tucks her wings under her shell and sleeps on her leaf. Goodnight, little garden.",
+   "beat": "Dot asleep on her leaf, the quiet garden around her, first stars.",
+   "text_pos": "bottom"
+  }
+ ]
+}

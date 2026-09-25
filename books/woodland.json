@@ -1,0 +1,84 @@
+{
+ "slug": "woodland",
+ "title": "Olive Keeps Watch",
+ "character": "Olive, a small round tawny owl with big amber eyes. She is waking up while everyone else goes to sleep.",
+ "refrain": "none; the twist is that Olive stays awake to keep watch.",
+ "palette": "lavender, moss green, russet, mustard, warm brown.",
+ "sky": "gold → pink → purple → pale night, moon above the trees.",
+ "cover": "Olive on a branch, one eye open, pink sky behind.",
+ "style": "Children's picture-book illustration for ages 3 to 6 in the style of a hand-pulled linocut block print: bold carved black outlines with slightly uneven hand-cut edges, flat ink colours in a limited palette of five muted colours on cream paper, visible carving texture in larger areas (fine parallel hatching lines instead of gradients), no photorealism, no digital gradients, no soft shading. Backgrounds are mostly cream paper with a flat pale sky. Dark ink only in outlines, hatching and small accents, never as large solid dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "In the woods, the light turns gold, then pink, then purple. Olive the owl opens one eye.",
+   "beat": "Olive in a hollow, one eye open.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "The rabbits hop home to their burrow, one, two, three, four.",
+   "beat": "Four rabbits at a burrow mouth.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "The fox curls up with her tail over her nose.",
+   "beat": "Fox curled in a ring under a bush.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "text": "The hedgehog rolls into a prickly ball under the leaves.",
+   "beat": "Hedgehog ball in fallen leaves.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "The deer lie down in the long soft grass.",
+   "beat": "Doe and fawn lying in grass, purple sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "The squirrel tucks his nut away and snuggles into his nest.",
+   "beat": "Squirrel in a leafy nest in a fork of the tree.",
+   "text_pos": "top"
+  },
+  {
+   "n": 7,
+   "text": "The badgers snuffle back into their sett.",
+   "beat": "Two badgers at a hole under tree roots.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "The mice creep into the hollow log, tiny tail by tiny tail.",
+   "beat": "Line of mice entering a log.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The bear cub yawns a big, big yawn in his den.",
+   "beat": "Bear cub yawning at a den mouth.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon floats up above the trees.",
+   "beat": "Moon over treetops, Olive small on a branch.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Olive spreads her wings and flies softly through the quiet woods.",
+   "beat": "Olive in flight between pale trunks.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "\"Sleep well, everyone,\" hoots Olive. \"I'll keep watch till morning.\"",
+   "beat": "Olive on a high branch, all the animals asleep below.",
+   "text_pos": "bottom"
+  }
+ ]
+}

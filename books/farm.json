@@ -1,0 +1,84 @@
+{
+ "slug": "farm",
+ "title": "Goodnight, Little Farm",
+ "character": "Pip, a small brown-and-white puppy with floppy ears and a red collar.",
+ "refrain": "\"Goodnight, ___,\" says Pip.",
+ "palette": "peach, lavender, moss green, straw yellow, warm brown.",
+ "sky": "peach → lavender → pale night with a big cream moon.",
+ "cover": "Pip sitting at the farm gate looking at the setting sun, barn behind.",
+ "style": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.",
+ "pages": [
+  {
+   "n": 1,
+   "text": "The sun slips low over the farm. Pip the puppy has one last job to do.",
+   "beat": "Pip at the farmyard gate, peach sky, barn and farmhouse behind.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "text": "\"Goodnight, hens,\" says Pip. The hens tuck their heads under their wings.",
+   "beat": "Henhouse, three hens on a roost, Pip peeking in.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "text": "\"Goodnight, cow,\" says Pip. The cow lies down in the sweet soft hay.",
+   "beat": "Barn interior, one cow settling in hay.",
+   "text_pos": "top"
+  },
+  {
+   "n": 4,
+   "text": "\"Goodnight, pig,\" says Pip. The pig snuggles into the mud with a happy sigh.",
+   "beat": "Pigpen, round pink pig, eyes closed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "text": "\"Goodnight, sheep.\" One sheep, two sheep, three sheep, all curled up close.",
+   "beat": "Meadow, three fluffy cream-white sheep in a huddle, Pip sitting nearby watching them.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "text": "\"Goodnight, horse,\" says Pip. The horse gives a soft, sleepy snort.",
+   "beat": "Stable door with a brown horse's head resting on it, Pip looking up from below, lavender sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "text": "\"Goodnight, ducks.\" The ducks float home across the still, quiet pond.",
+   "beat": "Pond, four ducks in a line, moon reflected.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "text": "\"Goodnight, tractor,\" says Pip. The tractor is asleep already.",
+   "beat": "Old red tractor in an open shed, Pip beside a big wheel.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "text": "The farmhouse lights go on, one, two, three.",
+   "beat": "Farmhouse with three glowing windows, deep lavender sky.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "text": "The moon comes up big and round over the barn.",
+   "beat": "Big cream moon over the barn roof, Pip small in the yard.",
+   "text_pos": "top"
+  },
+  {
+   "n": 11,
+   "text": "Pip pads home and curls into his basket.",
+   "beat": "Kitchen corner, Pip in a wicker basket with a blanket.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "text": "\"Goodnight, farm,\" whispers Pip. And the farm says goodnight back.",
+   "beat": "Whole farm from a little way off, every window dark but one, moon and stars.",
+   "text_pos": "bottom"
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "slug": "r07-jack-can-run",
+ "title": "Jack Can Run",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Sam, a very big shaggy grey-and-white old English sheepdog with hair over his eyes. Jack, a small white jack russell terrier with a brown patch over one eye.",
+ "cast": [
+  "Pip",
+  "Sam",
+  "Jack"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Jack the jack russell terrier. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Jack",
+   "text": "Jack.",
+   "beat": "Jack the jack russell terrier.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "can",
+   "text": "Jack can jump.",
+   "beat": "Jack leaping high.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "run",
+   "text": "Run, Jack, run.",
+   "beat": "Jack running flat out.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "fast",
+   "text": "Jack is fast.",
+   "beat": "Jack running very fast past Sam, speed lines behind Jack, both fully visible.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "stop",
+   "text": "Stop, Jack, stop!",
+   "beat": "Jack skidding to a halt, a puff of dust.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "stick",
+   "text": "Jack has a stick.",
+   "beat": "Jack with a stick in his mouth.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "drop",
+   "text": "Drop the stick, Jack.",
+   "beat": "Jack dropping the stick on the ground.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "grab",
+   "text": "Grab the stick, Pip.",
+   "beat": "Pip grabbing the stick.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "tug",
+   "text": "Tug, tug, tug.",
+   "beat": "Pip and Jack tugging the stick from both ends.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "snap",
+   "text": "Snap!",
+   "beat": "The stick broken in two, both dogs surprised.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Jack has a stick. Pip has a stick.",
+   "beat": "Each dog holding half a stick.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Jack. Nap, Pip.",
+   "beat": "Both asleep with their halves of the stick.",
+   "text_pos": "bottom"
+  }
+ ]
+}

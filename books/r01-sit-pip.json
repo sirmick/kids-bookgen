@@ -1,0 +1,101 @@
+{
+ "slug": "r01-sit-pip",
+ "title": "Sit, Pip",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes.",
+ "cast": [
+  "Pip",
+  "Tip"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Pip the beagle pup sitting, looking at the reader. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Pip",
+   "text": "Pip.",
+   "beat": "Pip the beagle pup sitting, looking at the reader.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "Tip",
+   "text": "Tip.",
+   "beat": "Tip the ginger kitten sitting.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "sit",
+   "text": "Sit, Pip.",
+   "beat": "Pip sitting up straight and proud.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "sat",
+   "text": "Tip sat.",
+   "beat": "Tip sitting down beside Pip.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "pat",
+   "text": "Pat, pat, Pip.",
+   "beat": "Tip patting Pip's head with one paw.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "tap",
+   "text": "Tap, tap, tap.",
+   "beat": "Pip tapping the floor with a paw, small motion marks.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "nap",
+   "text": "Nap, Pip.",
+   "beat": "Pip lying down with eyes closed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "tin",
+   "text": "A tin.",
+   "beat": "A tin of food on the floor, Pip sniffing it.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "sip",
+   "text": "Sip, sip, sip.",
+   "beat": "Tip sipping from a saucer.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "",
+   "text": "Pip sat. Tip sat.",
+   "beat": "Pip and Tip sitting side by side.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Nap, Pip. Nap, Tip.",
+   "beat": "Both lying down, eyes closing.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, nap, nap.",
+   "beat": "Both asleep, curled together.",
+   "text_pos": "bottom"
+  }
+ ]
+}

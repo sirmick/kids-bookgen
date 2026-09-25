@@ -1,0 +1,104 @@
+{
+ "slug": "r05-chip-the-pup",
+ "title": "Chip the Pup",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. Mim, a small grey tabby kitten with dark stripes, white paws and green eyes. Sam, a very big shaggy grey-and-white old English sheepdog with hair over his eyes. Chip, a tiny tan chihuahua with huge ears.",
+ "cast": [
+  "Pip",
+  "Tip",
+  "Mim",
+  "Sam",
+  "Chip"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Chip the tiny chihuahua. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Chip",
+   "text": "Chip.",
+   "beat": "Chip the tiny chihuahua.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "pup",
+   "text": "Chip is a pup.",
+   "beat": "Chip beside big Sam for scale.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "ship",
+   "text": "A ship in the tub.",
+   "beat": "A toy sailing ship floating in the tub, Chip looking in.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "fish",
+   "text": "A fish!",
+   "beat": "A goldfish in a round bowl, Mim watching.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "duck",
+   "text": "A duck in the tub.",
+   "beat": "A yellow rubber duck in the tub, Chip beside it.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "kick",
+   "text": "Kick, Pip, kick.",
+   "beat": "Pip kicking a ball.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "sing",
+   "text": "Sing, Tip, sing.",
+   "beat": "Tip on a fence, mouth open, moon above.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "bath",
+   "text": "Bath! Chip is in the bath.",
+   "beat": "Chip in a small bath with bubbles, his huge upright chihuahua ears sticking out.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "rug",
+   "text": "Chip is on the rug.",
+   "beat": "Chip on a striped rug wrapped in a towel.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "sock",
+   "text": "A sock on Chip.",
+   "beat": "Chip wearing a sock like a jumper.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "See Chip. He is a pup. He is on the rug.",
+   "beat": "Chip sitting on the rug.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Chip. Nap in the sock.",
+   "beat": "Chip asleep inside a big sock.",
+   "text_pos": "bottom"
+  }
+ ]
+}

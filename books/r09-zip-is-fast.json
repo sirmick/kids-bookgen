@@ -1,0 +1,101 @@
+{
+ "slug": "r09-zip-is-fast",
+ "title": "Zip Is Fast",
+ "character": "Jack, a small white jack russell terrier with a brown patch over one eye. Zip, a slim grey greyhound with a long nose.",
+ "cast": [
+  "Jack",
+  "Zip"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Zip the greyhound. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Zip",
+   "text": "Zip.",
+   "beat": "Zip the greyhound.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "thin",
+   "text": "Zip is thin.",
+   "beat": "Zip in profile, very slim.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "long",
+   "text": "Zip is long.",
+   "beat": "Zip stretched out, long legs and nose.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "past",
+   "text": "Zip ran past Jack.",
+   "beat": "Zip streaking past Jack.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "win",
+   "text": "Zip can win.",
+   "beat": "Zip crossing a finish ribbon.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "grin",
+   "text": "Zip has a big grin.",
+   "beat": "Zip grinning widely.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "pant",
+   "text": "Pant, pant, pant.",
+   "beat": "Zip panting, tongue out.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "drink",
+   "text": "Drink, Zip, drink.",
+   "beat": "Zip drinking from a bowl.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "flop",
+   "text": "Flop! Zip is on the rug.",
+   "beat": "Zip flopped flat on a rug.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "",
+   "text": "Go, Zip, go! Zip ran fast.",
+   "beat": "Zip running across grass, Jack far behind.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Zip can win. Zip has a big grin.",
+   "beat": "Zip grinning with the ribbon.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Zip. Zip is a fast dog.",
+   "beat": "Zip asleep on the rug, legs twitching.",
+   "text_pos": "bottom"
+  }
+ ]
+}

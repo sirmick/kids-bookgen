@@ -1,0 +1,102 @@
+{
+ "slug": "r02-mim-is-a-cat",
+ "title": "Mim Is a Cat",
+ "character": "Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. Mim, a small grey tabby kitten with dark stripes, white paws and green eyes.",
+ "cast": [
+  "Pip",
+  "Tip",
+  "Mim"
+ ],
+ "refrain": "",
+ "palette": "cream, warm grey, ginger orange, soft blue, grass green.",
+ "sky": "plain cream or pale sky background, no scenery",
+ "cover": "Mim the grey tabby kitten sitting. Big, simple and friendly.",
+ "style": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image.",
+ "reference": "work/reading/cast.png",
+ "pages": [
+  {
+   "n": 1,
+   "word": "Mim",
+   "text": "Mim.",
+   "beat": "Mim the grey tabby kitten sitting.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 2,
+   "word": "cat",
+   "text": "Mim is a cat.",
+   "beat": "Mim standing proudly.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 3,
+   "word": "mat",
+   "text": "Mim sat on a mat.",
+   "beat": "Mim on a small round mat.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 4,
+   "word": "hat",
+   "text": "A hat.",
+   "beat": "A red floppy hat on the floor, Tip peeking at it.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 5,
+   "word": "red",
+   "text": "Tip sat on a red hat.",
+   "beat": "Tip sitting on the red hat, squashing it.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 6,
+   "word": "cap",
+   "text": "Pip and a cap.",
+   "beat": "Pip wearing a cap.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 7,
+   "word": "ham",
+   "text": "Ham! Pip sat and sat.",
+   "beat": "Pip staring at a slice of ham on a plate.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 8,
+   "word": "hid",
+   "text": "Tip hid.",
+   "beat": "Tip hiding under the red floppy hat, only her ginger tail showing.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 9,
+   "word": "rat",
+   "text": "A rat!",
+   "beat": "A grey toy rat on the floor, Mim wide-eyed.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 10,
+   "word": "ran",
+   "text": "Mim ran and ran.",
+   "beat": "Mim running after the toy rat.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 11,
+   "word": "",
+   "text": "Pip sat. Tip sat. Mim sat.",
+   "beat": "The three in a row.",
+   "text_pos": "bottom"
+  },
+  {
+   "n": 12,
+   "word": "",
+   "text": "Nap, Mim. Nap, nap, nap.",
+   "beat": "Mim asleep on the mat, Tip and Pip asleep beside her.",
+   "text_pos": "bottom"
+  }
+ ]
+}

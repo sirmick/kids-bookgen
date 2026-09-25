@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Generator</title>
+<style>
+:root {
+  --bg: #f6f3ec; --panel: #fffdf8; --ink: #22201c; --muted: #75706a; --line: #ddd6c9;
+  --accent: #3d6b8f; --accent-ink: #fff; --bad: #b3412f; --good: #3f7d4a; --chip: #ece6da;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1a18; --panel: #25231f; --ink: #ece7de; --muted: #a39d93; --line: #3b3832;
+          --accent: #7fb0d6; --accent-ink: #111; --bad: #e27a66; --good: #7cc48a; --chip: #312e29; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, sans-serif; }
+header { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding: 10px 16px;
+         border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 5; }
+header h1 { font-size: 16px; margin: 0 8px 0 0; }
+header label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+header input { width: 220px; }
+#spend { margin-left: auto; color: var(--muted); }
+main { display: grid; grid-template-columns: 230px 1fr; min-height: calc(100vh - 52px); }
+@media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+aside { border-right: 1px solid var(--line); padding: 12px; background: var(--panel); }
+aside .btns { display: grid; gap: 6px; margin-bottom: 12px; }
+#booklist { list-style: none; margin: 0; padding: 0; }
+#booklist li { padding: 6px 8px; border-radius: 6px; cursor: pointer; display: flex; justify-content: space-between; gap: 6px; }
+#booklist li:hover { background: var(--chip); }
+#booklist li.on { background: var(--accent); color: var(--accent-ink); }
+#booklist small { opacity: .7; }
+section#editor { padding: 16px; max-width: 1400px; }
+.empty { color: var(--muted); padding: 40px; text-align: center; }
+fieldset { border: 1px solid var(--line); border-radius: 8px; margin: 0 0 16px; padding: 12px; background: var(--panel); }
+legend { font-weight: 600; padding: 0 6px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
+@media (max-width: 800px) { .grid2 { grid-template-columns: 1fr; } }
+.full { grid-column: 1 / -1; }
+.field { display: grid; gap: 3px; }
+.field > span { font-size: 12px; color: var(--muted); }
+input, textarea, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 5px; padding: 5px 7px; width: 100%; }
+textarea { resize: vertical; min-height: 54px; }
+button { font: inherit; border: 1px solid var(--line); background: var(--chip); color: var(--ink);
+  border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.danger { color: var(--bad); }
+button:disabled { opacity: .5; cursor: default; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 500; padding: 4px; }
+td { padding: 3px 4px; vertical-align: top; }
+td.n { width: 28px; text-align: right; color: var(--muted); padding-top: 9px; }
+td.pos { width: 90px; } td.word { width: 90px; }
+td textarea { min-height: 40px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.card .pic { position: relative; aspect-ratio: 3 / 4; background: var(--chip); cursor: zoom-in; overflow: hidden; }
+.card.sq .pic { aspect-ratio: 1; }
+.card .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card .pic .ph { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: 12px; text-align: center; padding: 8px; }
+.card .pic.busy::after { content: "generating…"; position: absolute; inset: 0; display: grid; place-items: center;
+  background: rgba(0,0,0,.35); color: #fff; font-weight: 600; }
+.card .meta { padding: 6px 8px; display: grid; gap: 5px; font-size: 12px; }
+.card .meta .t { font-weight: 600; display: flex; justify-content: space-between; }
+.card .meta .err { color: var(--bad); word-break: break-word; }
+.card .meta .row button { padding: 2px 7px; font-size: 12px; }
+/* text-panel preview, roughly as the reader app draws it */
+.panel { position: absolute; left: 0; right: 0; background: #fff; color: #111; font: 600 10px/1.25 Georgia, serif;
+  padding: 6% 7%; display: none; text-align: center; }
+.showtext .panel { display: block; }
+.panel.bottom { bottom: 0; } .panel.top { top: 0; }
+.panel.reading { left: 10%; right: 10%; bottom: 4%; border-radius: 4px; }
+.panel .w { display: block; font: 700 17px/1.1 system-ui, sans-serif; margin-bottom: 3px; }
+#lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.8); display: none; z-index: 20; padding: 20px;
+  grid-template-columns: minmax(0, auto) minmax(260px, 420px); gap: 20px; justify-content: center; align-items: start; }
+#lightbox.on { display: grid; }
+#lightbox img { max-height: calc(100vh - 40px); max-width: 100%; display: block; background: #fff; }
+#lightbox pre { white-space: pre-wrap; background: var(--panel); color: var(--ink); padding: 12px; border-radius: 8px;
+  max-height: calc(100vh - 40px); overflow: auto; margin: 0; font-size: 12px; }
+@media (max-width: 800px) { #lightbox { grid-template-columns: 1fr; overflow: auto; } }
+#log { font: 12px/1.4 ui-monospace, monospace; max-height: 160px; overflow: auto; white-space: pre-wrap; color: var(--muted); margin: 0; }
+.hint { color: var(--muted); font-size: 12px; }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Book Generator</h1>
+  <label>OpenRouter key <input id="key" type="password" placeholder="sk-or-…" autocomplete="off"></label>
+  <label>Model <input id="model" value="google/gemini-3.1-flash-image"></label>
+  <label>Parallel <input id="workers" type="number" min="1" max="8" value="3" style="width:56px"></label>
+  <span id="spend"></span>
+</header>
+<main>
+  <aside>
+    <div class="btns">
+      <button class="primary" id="new">New book</button>
+      <button id="importJson">Import book JSON…</button>
+      <button id="importProject">Import project file…</button>
+    </div>
+    <ul id="booklist"></ul>
+    <p class="hint">Books and images are kept in this browser (IndexedDB). Export a project file to back one up.</p>
+    <input type="file" id="fileJson" accept=".json,application/json" multiple class="hidden">
+    <input type="file" id="fileProject" accept=".json" class="hidden">
+    <input type="file" id="fileImages" accept="image/*" multiple class="hidden">
+    <input type="file" id="fileOne" accept="image/*" class="hidden">
+  </aside>
+  <section id="editor"><div class="empty">Create a book or import one of <code>books/*.json</code>.</div></section>
+</main>
+<div id="lightbox"><img alt=""><pre></pre></div>
+
+<script>
+"use strict";
+const W = 1072, H = 1448;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+const DEFAULT_STYLE = "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image.";
+
+/* ---------- storage: IndexedDB with two stores ---------- */
+let db;
+function openDb() {
+  return new Promise((ok, bad) => {
+    const r = indexedDB.open("book-generator", 1);
+    r.onupgradeneeded = () => { r.result.createObjectStore("books"); r.result.createObjectStore("images"); };
+    r.onsuccess = () => ok(db = r.result); r.onerror = () => bad(r.error);
+  });
+}
+function tx(store, mode, fn) {
+  return new Promise((ok, bad) => {
+    const t = db.transaction(store, mode), s = t.objectStore(store), req = fn(s);
+    t.oncomplete = () => ok(req?.result); t.onerror = () => bad(t.error);
+  });
+}
+const dbGet = (st, k) => tx(st, "readonly", s => s.get(k));
+const dbPut = (st, k, v) => tx(st, "readwrite", s => s.put(v, k));
+const dbDel = (st, k) => tx(st, "readwrite", s => s.delete(k));
+const dbKeys = st => tx(st, "readonly", s => s.getAllKeys());
+
+/* ---------- settings ---------- */
+const pref = (k, d) => { try { return localStorage.getItem("bg." + k) ?? d; } catch { return d; } };
+const setPref = (k, v) => { try { localStorage.setItem("bg." + k, v); } catch {} };
+for (const id of ["key", "model", "workers"]) {
+  const el = $("#" + id); el.value = pref(id, el.value);
+  el.addEventListener("change", () => setPref(id, el.value.trim()));
+}
+
+/* ---------- state ---------- */
+let book = null;          // current book object
+const imgs = {};          // name -> {blob, url, prompt, cost, model, refs, seconds} for current book + cast
+const busy = new Set(), errs = {};
+let spent = +pref("spent", 0);
+const showSpend = () => $("#spend").textContent = `spent this browser: $${spent.toFixed(2)}`;
+showSpend();
+
+const isReading = b => (b.set || (b.cast?.length ? "reading" : "bedtime")) === "reading";
+const fname = k => k === "char" ? "char.png" : k === 0 ? "cover.png" : `p${String(k).padStart(2, "0")}.png`;
+const imgKey = k => typeof k === "string" && k.startsWith("cast:") ? `cast/${k.slice(5)}.png` : `${book.slug}/${fname(k)}`;
+const label = k => typeof k === "string" && k.startsWith("cast:") ? k.slice(5) : k === "char" ? "character sheet" : k === 0 ? "cover" : `page ${k}`;
+
+function blankBook() {
+  return { slug: "new-book", title: "New Book", set: "bedtime", character: "", refrain: "", palette: "", sky: "",
+           cover: "", style: DEFAULT_STYLE, cast: [], castDesc: {},
+           pages: Array.from({ length: 12 }, (_, i) => ({ n: i + 1, text: "", beat: "", text_pos: "bottom", word: "" })) };
+}
+
+/* Books imported from reading2json.py have cast names and one joined "character" string. */
+function normalise(b) {
+  const set = b.set || (b.cast?.length ? "reading" : "bedtime");
+  b = Object.assign(blankBook(), b, { set });
+  b.castDesc = b.castDesc || {};
+  if (b.cast?.length) for (const m of b.cast) {
+    if (!b.castDesc[m]) { const r = b.character.match(new RegExp(`(${m}, [^.]+)\\.`)); b.castDesc[m] = r ? r[1] : `${m}, `; }
+  }
+  b.pages = b.pages.map((p, i) => ({ n: i + 1, text: "", beat: "", text_pos: "bottom", word: "", ...p }));
+  return b;
+}
+
+/* ---------- prompts: same wording as gen.py ---------- */
+function bedtimePrompts(b) {
+  const s = b.style;
+  const common = `${s} Palette for this book (for skies, ground, buildings and accents): ${b.palette}. ` +
+                 `Animals keep their natural colours. Sky and light over the story: ${b.sky}. `;
+  const out = {};
+  out.char = { prompt: `Character reference sheet for a children's picture book. ${s} Palette: ${b.palette}. ` +
+    `Show the same character three times on a plain cream background: standing front view, ` +
+    `side view, and curled up asleep. The character: ${b.character} ` +
+    `Identical colours, markings and proportions in all three.`, aspect: "1:1", refs: [] };
+  out[0] = { prompt: common + `Cover illustration for the book '${b.title}'. Scene: ${b.cover} ` +
+    `Main character: ${b.character} Match the attached character reference exactly. ` +
+    `The cover may use the whole image.`, aspect: "3:4", refs: ["char"] };
+  for (const p of b.pages) out[p.n] = { prompt: common +
+    `This is page ${p.n} of ${b.pages.length}; pick the sky and light for that point in the evening. ` +
+    `Main character: ${b.character} Match the attached character reference exactly ` +
+    `(same colours, markings, proportions), unless the scene does not include the character. ` +
+    `Scene: ${p.beat} Keep the ${p.text_pos} quarter of the image simple and uncluttered ` +
+    `(plain ground, water or sky) because a text panel will be drawn there.`, aspect: "3:4", refs: ["char"] };
+  return out;
+}
+
+function readingPrompts(b) {
+  const s = b.style, out = {};
+  const present = t => b.cast.filter(m => new RegExp(`\\b${m}\\b`).test(t));
+  for (const m of b.cast) out["cast:" + m] = { prompt: `Character reference sheet for a children's learn-to-read picture book. ${s} ` +
+    `Palette: ${b.palette}. Animals keep their natural colours. Show the same character three ` +
+    `times on a plain cream background: sitting facing the viewer, standing side view, and curled up ` +
+    `asleep. The character: ${b.castDesc[m]}. Identical colours, markings and proportions in all three.`, aspect: "1:1", refs: [] };
+  const pages = [[0, { beat: b.cover, text: "" }], ...b.pages.map(p => [p.n, p])];
+  let prev = [];
+  for (const [n, p] of pages) {
+    let who = present(p.beat + " " + p.text);
+    if (!who.length && n > 1 && !p.no_cast) who = prev;   // "Both asleep" etc.: same characters as the page before
+    if (n > 0) prev = who;
+    const chars = who.map(m => b.castDesc[m] + ".").join(" ");
+    const refnote = who.length ? `The attached images are character references, in this order: ${who.join(", ")}. ` +
+      `Draw each character exactly as in its reference (same colours, markings, proportions). ` : "";
+    out[n] = { prompt: `${s} Palette: ${b.palette}. Animals keep their natural colours. ` +
+      `Characters in this picture: ${chars || "none"} ${refnote}` +
+      `Show only what the scene describes, on a plain cream background. Scene: ${p.beat} ` +
+      `Keep the bottom third of the image plain cream because a large text panel will be drawn there.`,
+      aspect: "3:4", refs: who.map(m => "cast:" + m) };
+  }
+  return out;
+}
+const prompts = b => isReading(b) ? readingPrompts(b) : bedtimePrompts(b);
+const refKeys = b => isReading(b) ? b.cast.map(m => "cast:" + m) : ["char"];
+const pageKeys = b => [0, ...b.pages.map(p => p.n)];
+
+/* ---------- OpenRouter ---------- */
+const blobToDataUrl = blob => new Promise(ok => { const r = new FileReader(); r.onload = () => ok(r.result); r.readAsDataURL(blob); });
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function callImage(prompt, refBlobs, aspect, tries = 3) {
+  const key = $("#key").value.trim();
+  if (!key) throw new Error("enter an OpenRouter key at the top");
+  const content = [{ type: "text", text: prompt }];
+  for (const r of refBlobs) content.push({ type: "image_url", image_url: { url: await blobToDataUrl(r) } });
+  const body = { model: $("#model").value.trim(), modalities: ["image", "text"],
+                 image_config: { aspect_ratio: aspect, image_size: "1K" }, messages: [{ role: "user", content }] };
+  let last;
+  for (let a = 0; a < tries; a++) {
+    try {
+      const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        method: "POST", headers: { Authorization: "Bearer " + key, "Content-Type": "application/json", "X-Title": "Book Generator" },
+        body: JSON.stringify(body) });
+      const d = await r.json();
+      if (d.error) { last = d.error.message || JSON.stringify(d.error); if (r.status === 401) break; await sleep(3000 * (a + 1)); continue; }
+      const im = d.choices?.[0]?.message?.images || [];
+      if (!im.length) { last = "no image in response: " + String(d.choices?.[0]?.message?.content).slice(0, 200); await sleep(3000); continue; }
+      const blob = await (await fetch(im[0].image_url.url)).blob();
+      return { blob, cost: d.usage?.cost || 0 };
+    } catch (e) { last = String(e); await sleep(5000); }
+  }
+  throw new Error("image generation failed: " + last);
+}
+
+async function generate(k) {
+  const p = prompts(book)[k];
+  const missing = p.refs.filter(r => !imgs[r]);
+  if (missing.length) throw new Error("make the reference first: " + missing.map(label).join(", "));
+  busy.add(k); delete errs[k]; renderCard(k);
+  const t = performance.now();
+  try {
+    const { blob, cost } = await callImage(p.prompt, p.refs.map(r => imgs[r].blob), p.aspect);
+    const rec = { blob, prompt: p.prompt, cost, model: $("#model").value.trim(), refs: p.refs.map(label),
+                  seconds: Math.round((performance.now() - t) / 100) / 10 };
+    await dbPut("images", imgKey(k), rec);
+    setImg(k, rec);
+    spent += cost; setPref("spent", spent); showSpend();
+    log(`${label(k)}  $${cost.toFixed(3)}  ${rec.seconds}s`);
+  } catch (e) { errs[k] = e.message; log(`${label(k)}: ${e.message}`); }
+  finally { busy.delete(k); renderCard(k); renderCost(); }
+}
+
+async function runAll(keys) {
+  const n = Math.max(1, +$("#workers").value || 3);
+  const q = [...keys];
+  await Promise.all(Array.from({ length: n }, async () => { while (q.length) await generate(q.shift()); }));
+}
+
+async function generateMissing(force) {
+  if (force && !confirm("Regenerate every image in this book? This spends money for each one.")) return;
+  const need = k => force || !imgs[k];
+  // references first (in parallel), then the pages that use them
+  await runAll(refKeys(book).filter(need));
+  const ready = pageKeys(book).filter(need).filter(k => prompts(book)[k].refs.every(r => imgs[r]));
+  await runAll(ready);
+}
+
+function setImg(k, rec) {
+  if (imgs[k]?.url) URL.revokeObjectURL(imgs[k].url);
+  if (rec) imgs[k] = { ...rec, url: URL.createObjectURL(rec.blob) }; else delete imgs[k];
+}
+
+/* ---------- post-processing for the device: crop-fit to 1072x1448, autocontrast (0.5% cutoff) ---------- */
+async function processForDevice(blob) {
+  const bmp = await createImageBitmap(blob);
+  const c = new OffscreenCanvas(W, H), g = c.getContext("2d");
+  const s = Math.max(W / bmp.width, H / bmp.height), sw = W / s, sh = H / s;
+  g.imageSmoothingQuality = "high";
+  g.drawImage(bmp, (bmp.width - sw) / 2, (bmp.height - sh) / 2, sw, sh, 0, 0, W, H);
+  const id = g.getImageData(0, 0, W, H), d = id.data, npx = W * H, cut = npx * 0.005;
+  for (let ch = 0; ch < 3; ch++) {
+    const hist = new Uint32Array(256);
+    for (let i = ch; i < d.length; i += 4) hist[d[i]]++;
+    let lo = 0, hi = 255, acc = 0;
+    while (lo < 255 && (acc += hist[lo]) <= cut) lo++;
+    acc = 0; while (hi > 0 && (acc += hist[hi]) <= cut) hi--;
+    if (hi <= lo) continue;
+    const lut = new Uint8ClampedArray(256);
+    for (let v = 0; v < 256; v++) lut[v] = (v - lo) * 255 / (hi - lo);
+    for (let i = ch; i < d.length; i += 4) d[i] = lut[d[i]];
+  }
+  g.putImageData(id, 0, 0);
+  return c.convertToBlob({ type: "image/png" });
+}
+
+function manifest() {
+  const have = pageKeys(book).filter(k => k && imgs[k]);
+  return { slug: book.slug, title: book.title, set: isReading(book) ? "reading" : "bedtime", cover: "cover.png",
+           pages: book.pages.filter(p => have.includes(p.n)).map(p =>
+             ({ n: p.n, image: fname(p.n), text: p.text, text_pos: p.text_pos, word: p.word || "" })) };
+}
+
+async function deviceFiles() {
+  const files = [["book.json", new Blob([JSON.stringify(manifest(), null, 1)], { type: "application/json" })]];
+  for (const k of pageKeys(book)) if (imgs[k]) { log(`processing ${label(k)}…`); files.push([fname(k), await processForDevice(imgs[k].blob)]); }
+  return files;
+}
+
+/* ---------- minimal zip writer (stored, no compression) ---------- */
+const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+const crc32 = u8 => { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
+async function makeZip(entries) {   // entries: [[path, Blob]]
+  const enc = new TextEncoder(), parts = [], central = []; let off = 0;
+  for (const [path, blob] of entries) {
+    const data = new Uint8Array(await blob.arrayBuffer()), name = enc.encode(path), crc = crc32(data);
+    const h = new DataView(new ArrayBuffer(30));
+    h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(8, 0, true);
+    h.setUint32(14, crc, true); h.setUint32(18, data.length, true); h.setUint32(22, data.length, true); h.setUint16(26, name.length, true);
+    parts.push(h, name, data);
+    const c = new DataView(new ArrayBuffer(46));
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true);
+    c.setUint32(16, crc, true); c.setUint32(20, data.length, true); c.setUint32(24, data.length, true);
+    c.setUint16(28, name.length, true); c.setUint32(42, off, true);
+    central.push(c, name);
+    off += 30 + name.length + data.length;
+  }
+  const csize = central.reduce((a, p) => a + p.byteLength, 0), e = new DataView(new ArrayBuffer(22));
+  e.setUint32(0, 0x06054b50, true); e.setUint16(8, entries.length, true); e.setUint16(10, entries.length, true);
+  e.setUint32(12, csize, true); e.setUint32(16, off, true);
+  return new Blob([...parts, ...central, e], { type: "application/zip" });
+}
+function download(blob, name) {
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+/* ---------- book list ---------- */
+async function refreshList() {
+  const keys = (await dbKeys("books")).sort();
+  $("#booklist").innerHTML = keys.map(k => `<li data-slug="${esc(k)}" class="${book?.slug === k ? "on" : ""}">${esc(k)}</li>`).join("");
+}
+$("#booklist").addEventListener("click", e => { const li = e.target.closest("li"); if (li) openBook(li.dataset.slug); });
+
+async function openBook(slug) {
+  const b = await dbGet("books", slug); if (!b) return;
+  for (const k of Object.keys(imgs)) setImg(k, null);
+  for (const k of Object.keys(errs)) delete errs[k];
+  book = normalise(b);
+  for (const k of [...refKeys(book), ...pageKeys(book)]) { const r = await dbGet("images", imgKey(k)); if (r) setImg(k, r); }
+  setPref("last", slug);
+  render(); refreshList();
+}
+
+let saveTimer;
+function save() { clearTimeout(saveTimer); saveTimer = setTimeout(() => dbPut("books", book.slug, book), 300); }
+
+$("#new").onclick = async () => {
+  let slug = prompt("Short name for the book (letters, numbers, dashes):", "my-book"); if (!slug) return;
+  slug = slug.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  if (await dbGet("books", slug) && !confirm(`"${slug}" exists. Replace its text (images are kept)?`)) return;
+  await dbPut("books", slug, { ...blankBook(), slug, title: slug.replace(/-/g, " ") });
+  openBook(slug);
+};
+$("#importJson").onclick = () => $("#fileJson").click();
+$("#fileJson").onchange = async e => {
+  let last;
+  for (const f of e.target.files) {
+    try { const b = normalise(JSON.parse(await f.text())); b.slug ||= f.name.replace(/\.json$/, ""); await dbPut("books", b.slug, b); last = b.slug; }
+    catch (err) { alert(`${f.name}: ${err.message}`); }
+  }
+  e.target.value = ""; await refreshList(); if (last) openBook(last);
+};
+
+/* project file = book JSON + every image as a data URL, for backup or moving between browsers */
+async function exportProject() {
+  const images = {};
+  for (const k of [...refKeys(book), ...pageKeys(book)]) if (imgs[k]) {
+    const { url, blob, ...meta } = imgs[k]; images[imgKey(k)] = { ...meta, data: await blobToDataUrl(blob) };
+  }
+  download(new Blob([JSON.stringify({ book, images })], { type: "application/json" }), `${book.slug}.project.json`);
+}
+$("#importProject").onclick = () => $("#fileProject").click();
+$("#fileProject").onchange = async e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+  try {
+    const { book: b, images } = JSON.parse(await f.text());
+    for (const [k, { data, ...meta }] of Object.entries(images || {}))
+      await dbPut("images", k, { ...meta, blob: await (await fetch(data)).blob() });
+    await dbPut("books", b.slug, normalise(b)); await refreshList(); openBook(b.slug);
+  } catch (err) { alert(err.message); }
+};
+
+/* drop in existing raw images (char.png, cover.png, p01.png… or cast names like Pip.png) */
+async function importImages(files, onlyKey) {
+  for (const f of files) {
+    let k = onlyKey;
+    if (k === undefined) {
+      const base = f.name.replace(/\.[^.]+$/, "");
+      if (base === "char") k = "char"; else if (base === "cover") k = 0;
+      else if (/^p\d\d$/.test(base)) k = +base.slice(1);
+      else if (book.cast.includes(base)) k = "cast:" + base;
+      else { log(`skipped ${f.name} (expected char, cover, p01…p12 or a cast name)`); continue; }
+    }
+    const rec = { blob: f, prompt: "(imported from " + f.name + ")", cost: 0, model: "", refs: [], seconds: 0 };
+    await dbPut("images", imgKey(k), rec); setImg(k, rec); log(`imported ${f.name} → ${label(k)}`);
+  }
+  renderCost();
+}
+$("#fileImages").onchange = async e => { await importImages(e.target.files); e.target.value = ""; };
+let uploadKey;
+$("#fileOne").onchange = async e => { if (e.target.files[0]) await importImages(e.target.files, uploadKey); e.target.value = ""; };
+
+/* ---------- rendering ---------- */
+function field(key, name, type = "input", cls = "") {
+  const v = esc(book[key]);
+  return `<label class="field ${cls}"><span>${name}</span>` +
+    (type === "textarea" ? `<textarea data-k="${key}">${v}</textarea>` : `<input data-k="${key}" value="${v}">`) + `</label>`;
+}
+
+function render() {
+  const r = isReading(book), ed = $("#editor");
+  ed.innerHTML = `
+  <fieldset><legend>Book</legend><div class="grid2">
+    <label class="field"><span>Slug (folder name on the device)</span><input value="${esc(book.slug)}" disabled></label>
+    <label class="field"><span>Set</span><select data-k="set">
+      <option value="bedtime"${r ? "" : " selected"}>Bedtime — one main character, one reference sheet</option>
+      <option value="reading"${r ? " selected" : ""}>Reading — named cast, big word per page</option></select></label>
+    ${field("title", "Title", "input", "full")}
+    ${field("style", "Style (goes into every prompt)", "textarea", "full")}
+    ${field("palette", "Palette")}
+    ${r ? "" : field("sky", "Sky / light arc")}
+    ${r ? "" : field("character", "Main character", "textarea", "full")}
+    ${field("cover", "Cover scene", "textarea", "full")}
+  </div></fieldset>
+  ${r ? `<fieldset><legend>Cast</legend>
+    <p class="hint">Reference sheets are shared by every reading book in this browser. A page gets the references for the cast names that appear in its text or beat.</p>
+    <table id="castTable"><tr><th>Name</th><th>Description (starts with the name)</th><th></th></tr>
+    ${book.cast.map((m, i) => `<tr><td style="width:110px"><input data-cast="${i}" data-f="name" value="${esc(m)}"></td>
+      <td><input data-cast="${i}" data-f="desc" value="${esc(book.castDesc[m])}"></td>
+      <td style="width:40px"><button class="danger" data-delcast="${i}" title="Remove">×</button></td></tr>`).join("")}
+    </table><div class="row" style="margin-top:6px"><button id="addCast">Add character</button></div></fieldset>` : ""}
+  <fieldset><legend>Pages</legend>
+    <table><tr><th></th>${r ? "<th>Big word</th>" : ""}<th>Text (drawn by the app)</th><th>Image beat</th><th>Panel</th></tr>
+    ${book.pages.map((p, i) => `<tr><td class="n">${p.n}</td>
+      ${r ? `<td class="word"><input data-p="${i}" data-f="word" value="${esc(p.word)}"></td>` : ""}
+      <td><textarea data-p="${i}" data-f="text">${esc(p.text)}</textarea></td>
+      <td><textarea data-p="${i}" data-f="beat">${esc(p.beat)}</textarea></td>
+      <td class="pos"><select data-p="${i}" data-f="text_pos"><option${p.text_pos === "bottom" ? " selected" : ""}>bottom</option><option${p.text_pos === "top" ? " selected" : ""}>top</option></select></td></tr>`).join("")}
+    </table>
+    <div class="row" style="margin-top:6px"><button id="addPage">Add page</button><button id="delPage" class="danger">Remove last page</button></div>
+  </fieldset>
+  <fieldset><legend>Images</legend>
+    <div class="row" style="margin-bottom:10px">
+      <button class="primary" id="genMissing">Generate missing</button>
+      <button id="genAll">Regenerate all</button>
+      <button id="importImgs">Import images…</button>
+      <label class="row"><input type="checkbox" id="showText" style="width:auto"${pref("showText", "1") === "1" ? " checked" : ""}> preview text panel</label>
+      <span id="cost" class="hint"></span>
+    </div>
+    <div class="cards" id="refCards"></div>
+    <div class="cards" id="pageCards" style="margin-top:12px"></div>
+  </fieldset>
+  <fieldset><legend>Export</legend>
+    <div class="row">
+      <button class="primary" id="zip">Download device zip</button>
+      ${window.showDirectoryPicker ? `<button id="toFolder">Write to folder…</button>` : ""}
+      <button id="json">Download book JSON</button>
+      <button id="proj">Export project file</button>
+      <button id="del" class="danger">Delete book</button>
+    </div>
+    <p class="hint">The device folder holds <code>book.json</code>, <code>cover.png</code> and <code>p01…</code> at ${W}×${H}.
+      Unzip into <code>book-generator/out/</code> and run <code>../nighttime-books/push.sh ${esc(book.slug)}</code>.</p>
+    <pre id="log"></pre>
+  </fieldset>`;
+  $("#refCards").innerHTML = refKeys(book).map(cardHtml).join("");
+  $("#pageCards").innerHTML = pageKeys(book).map(cardHtml).join("");
+  ed.classList.toggle("showtext", $("#showText").checked);
+  renderCost();
+  bindEditor();
+}
+
+function cardHtml(k) {
+  const ref = typeof k === "string";
+  return `<div class="card${ref ? " sq" : ""}" data-card="${esc(String(k))}"></div>`;
+}
+function renderCard(k) {
+  const el = document.querySelector(`[data-card="${CSS.escape(String(k))}"]`); if (!el) return;
+  const im = imgs[k], p = typeof k === "number" && k > 0 ? book.pages[k - 1] : null, r = isReading(book);
+  const panel = p && (p.text || p.word) ? `<div class="panel ${r ? "reading bottom" : p.text_pos}">${r && p.word ? `<span class="w">${esc(p.word)}</span>` : ""}${esc(p.text)}</div>` : "";
+  el.innerHTML = `<div class="pic${busy.has(k) ? " busy" : ""}">${im ? `<img src="${im.url}" alt="">` : `<div class="ph">not generated</div>`}${panel}</div>
+    <div class="meta"><div class="t"><span>${esc(label(k))}</span><span class="hint">${im && im.cost ? "$" + im.cost.toFixed(3) : ""}</span></div>
+    ${errs[k] ? `<div class="err">${esc(errs[k])}</div>` : ""}
+    <div class="row"><button data-gen>${im ? "Redo" : "Generate"}</button><button data-up>Upload</button>${im ? `<button data-rm class="danger">×</button>` : ""}</div></div>`;
+  $("[data-gen]", el).disabled = busy.has(k);
+  $("[data-gen]", el).onclick = () => { if (!im || confirm(`Regenerate ${label(k)}?`)) generate(k); };
+  $("[data-up]", el).onclick = () => { uploadKey = k; $("#fileOne").click(); };
+  if (im) $("[data-rm]", el).onclick = async () => { if (!confirm(`Delete the ${label(k)} image?`)) return; await dbDel("images", imgKey(k)); setImg(k, null); renderCard(k); renderCost(); };
+  $(".pic", el).onclick = () => openLightbox(k);
+}
+function renderCost() {
+  const el = $("#cost"); if (!el) return;
+  const keys = [...refKeys(book), ...pageKeys(book)], have = keys.filter(k => imgs[k]);
+  const c = have.reduce((a, k) => a + (imgs[k].cost || 0), 0);
+  el.textContent = `${have.length}/${keys.length} images · $${c.toFixed(2)} spent on this book · ~$0.07 per image`;
+  for (const k of keys) renderCard(k);
+}
+function log(s) { const el = $("#log"); if (el) { el.textContent += s + "\n"; el.scrollTop = 1e9; } }
+
+function openLightbox(k) {
+  const lb = $("#lightbox"), im = imgs[k], p = prompts(book)[k];
+  $("img", lb).src = im ? im.url : ""; $("img", lb).classList.toggle("hidden", !im);
+  $("pre", lb).textContent = (im ? `${label(k)} — ${im.model || "imported"}  $${(im.cost || 0).toFixed(3)}  ${im.seconds || 0}s\nrefs: ${(im.refs || []).join(", ") || "none"}\n\nPROMPT USED:\n${im.prompt}\n\n` : "") +
+    `PROMPT NOW (from current text):\n${p.prompt}\n\nrefs: ${p.refs.map(label).join(", ") || "none"}`;
+  lb.classList.add("on");
+}
+$("#lightbox").onclick = () => $("#lightbox").classList.remove("on");
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("#lightbox").classList.remove("on"); });
+
+function bindEditor() {
+  const ed = $("#editor");
+  ed.oninput = ed.onchange = e => {
+    const t = e.target;
+    if (t.dataset.k) {
+      book[t.dataset.k] = t.value;
+      if (t.dataset.k === "set" && e.type === "change") { if (t.value === "reading" && !book.cast.length) book.cast = []; save(); render(); return; }
+    } else if (t.dataset.p !== undefined) {
+      book.pages[+t.dataset.p][t.dataset.f] = t.value; renderCard(+t.dataset.p + 1);
+    } else if (t.dataset.cast !== undefined && e.type === "change") {
+      const i = +t.dataset.cast, old = book.cast[i];
+      if (t.dataset.f === "name") {
+        const nu = t.value.trim(); if (!nu || nu === old) return;
+        book.cast[i] = nu; book.castDesc[nu] = (book.castDesc[old] || "").replace(new RegExp(`^${old}\\b`), nu); delete book.castDesc[old];
+        reloadCast().then(render);
+      } else book.castDesc[old] = t.value;
+    } else if (t.id === "showText") { setPref("showText", t.checked ? "1" : "0"); ed.classList.toggle("showtext", t.checked); return; }
+    else return;
+    save();
+  };
+  $("#genMissing").onclick = () => generateMissing(false);
+  $("#genAll").onclick = () => generateMissing(true);
+  $("#importImgs").onclick = () => $("#fileImages").click();
+  $("#addPage").onclick = () => { book.pages.push({ n: book.pages.length + 1, text: "", beat: "", text_pos: "bottom", word: "" }); save(); render(); };
+  $("#delPage").onclick = () => { if (book.pages.length > 1 && confirm("Remove the last page?")) { book.pages.pop(); save(); render(); } };
+  if ($("#addCast")) $("#addCast").onclick = async () => {
+    const m = prompt("Character name (as written in the text):"); if (!m || book.cast.includes(m)) return;
+    book.cast.push(m); book.castDesc[m] = `${m}, `; save(); await reloadCast(); render();
+  };
+  ed.querySelectorAll("[data-delcast]").forEach(b => b.onclick = () => {
+    const m = book.cast[+b.dataset.delcast]; book.cast.splice(+b.dataset.delcast, 1); delete book.castDesc[m]; setImg("cast:" + m, null); save(); render();
+  });
+  $("#zip").onclick = async () => { const files = await deviceFiles(); download(await makeZip(files.map(([n, b]) => [`${book.slug}/${n}`, b])), `${book.slug}.zip`); log("zip ready"); };
+  if ($("#toFolder")) $("#toFolder").onclick = async () => {
+    try {
+      const root = await showDirectoryPicker({ mode: "readwrite" });
+      const dir = await root.getDirectoryHandle(book.slug, { create: true });
+      for (const [n, b] of await deviceFiles()) { const w = await (await dir.getFileHandle(n, { create: true })).createWritable(); await w.write(b); await w.close(); }
+      log(`wrote ${root.name}/${book.slug}/`);
+    } catch (e) { if (e.name !== "AbortError") log(e.message); }
+  };
+  $("#json").onclick = () => download(new Blob([JSON.stringify(book, null, 1)], { type: "application/json" }), `${book.slug}.json`);
+  $("#proj").onclick = exportProject;
+  $("#del").onclick = async () => {
+    if (!confirm(`Delete "${book.slug}" and its page images from this browser? (Shared cast sheets are kept.)`)) return;
+    for (const k of ["char", ...pageKeys(book)]) await dbDel("images", `${book.slug}/${fname(k)}`);
+    await dbDel("books", book.slug); book = null;
+    $("#editor").innerHTML = `<div class="empty">Deleted.</div>`; refreshList();
+  };
+}
+async function reloadCast() { for (const m of book.cast) if (!imgs["cast:" + m]) { const r = await dbGet("images", `cast/${m}.png`); if (r) setImg("cast:" + m, r); } }
+
+/* ---------- start ---------- */
+openDb().then(async () => {
+  await refreshList();
+  const last = pref("last", ""); if (last && await dbGet("books", last)) openBook(last);
+}).catch(e => $("#editor").innerHTML = `<div class="empty">IndexedDB is unavailable: ${esc(e.message)}</div>`);
+</script>
+</body>
+</html>
