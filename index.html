@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M20 4a12 12 0 1 0 8 20A10 10 0 0 1 20 4z%27 fill=%27%23e8b84a%27/%3E%3C/svg%3E">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Book Generator</title>
 <style>
@@ -21,6 +22,7 @@ header h1 { font-size: 16px; margin: 0 8px 0 0; }
 header label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
 header input { width: 220px; }
 #spend { margin-left: auto; color: var(--muted); }
+header a { color: var(--accent); }
 main { display: grid; grid-template-columns: 230px 1fr; min-height: calc(100vh - 52px); }
 @media (max-width: 800px) { main { grid-template-columns: 1fr; } }
 aside { border-right: 1px solid var(--line); padding: 12px; background: var(--panel); }
@@ -92,6 +94,7 @@ td textarea { min-height: 40px; }
   <label>OpenRouter key <input id="key" type="password" placeholder="sk-or-…" autocomplete="off"></label>
   <label>Model <input id="model" value="google/gemini-3.1-flash-image"></label>
   <label>Parallel <input id="workers" type="number" min="1" max="8" value="3" style="width:56px"></label>
+  <a href="read.html" target="_blank">See finished books ↗</a>
   <span id="spend"></span>
 </header>
 <main>
@@ -100,7 +103,7 @@ td textarea { min-height: 40px; }
       <button class="primary" id="new">New book</button>
       <button id="importJson">Import book JSON…</button>
       <button id="importProject">Import project file…</button>
-      <select id="example"><option value="">Load an example…</option><optgroup label="Finished, with pictures"><option value="farm">Goodnight, Little Farm</option><option value="kittens">Goodnight, Kittens</option><option value="r01-sit-pip">Sit, Pip</option></optgroup><optgroup label="Text only (generate the pictures)"><option value="cascades">Goodnight, Mountain</option><option value="dogs">Goodnight, Dogs</option><option value="fireflies">The Firefly's Lantern</option><option value="fnq">Goodnight, Daintree</option><option value="garden">Goodnight, Little Garden</option><option value="r02-mim-is-a-cat">Mim Is a Cat</option><option value="r03-sam-the-dog">Sam the Dog</option><option value="r04-bob-and-the-box">Bob and the Box</option><option value="r05-chip-the-pup">Chip the Pup</option><option value="r06-spot-and-the-frog">Spot and the Frog</option><option value="r07-jack-can-run">Jack Can Run</option><option value="r08-max-is-not-big">Max Is Not Big</option><option value="r09-zip-is-fast">Zip Is Fast</option><option value="r10-the-big-nap">The Big Nap</option><option value="rainforest">Rainforest Lullaby</option><option value="reef">Down in the Sleepy Reef</option><option value="savanna">Goodnight, Big Savanna</option><option value="woodland">Olive Keeps Watch</option><option value="zoo">The Zoo Goes to Sleep</option></optgroup></select>
+      <select id="example"><option value="">Load an example…</option><optgroup label="Finished, with pictures" id="exPics"></optgroup><optgroup label="Text only (generate the pictures)" id="exText"><option value="cascades">Goodnight, Mountain</option><option value="dogs">Goodnight, Dogs</option><option value="farm">Goodnight, Little Farm</option><option value="fireflies">The Firefly's Lantern</option><option value="fnq">Goodnight, Daintree</option><option value="garden">Goodnight, Little Garden</option><option value="kittens">Goodnight, Kittens</option><option value="r01-sit-pip">Sit, Pip</option><option value="r02-mim-is-a-cat">Mim Is a Cat</option><option value="r03-sam-the-dog">Sam the Dog</option><option value="r04-bob-and-the-box">Bob and the Box</option><option value="r05-chip-the-pup">Chip the Pup</option><option value="r06-spot-and-the-frog">Spot and the Frog</option><option value="r07-jack-can-run">Jack Can Run</option><option value="r08-max-is-not-big">Max Is Not Big</option><option value="r09-zip-is-fast">Zip Is Fast</option><option value="r10-the-big-nap">The Big Nap</option><option value="rainforest">Rainforest Lullaby</option><option value="reef">Down in the Sleepy Reef</option><option value="savanna">Goodnight, Big Savanna</option><option value="woodland">Olive Keeps Watch</option><option value="zoo">The Zoo Goes to Sleep</option></optgroup></select>
     </div>
     <ul id="booklist"></ul>
     <p class="hint">Your OpenRouter key and books stay in this browser (localStorage and IndexedDB); the key is only sent to openrouter.ai. Export a project file to back one up.</p>
@@ -419,7 +422,7 @@ $("#example").onchange = async e => {
       const get = async (path, key, meta) => {
         const res = await fetch(path); if (res.ok) await dbPut("images", key, { cost: 0, model: "", refs: [], seconds: 0, prompt: "(example)", ...meta, blob: await res.blob() });
       };
-      await Promise.all(Object.entries(ex).map(([stem, meta]) => get(`examples/${slug}/${stem}.webp`, `${slug}/${stem}.png`, meta)));
+      await Promise.all(Object.entries(ex.images).map(([stem, meta]) => get(`examples/${slug}/${stem}.webp`, `${slug}/${stem}.png`, meta)));
       const cast = (await exampleIndex()).cast;
       await Promise.all(b.cast.filter(m => m in cast).map(async m => {
         if (!await dbGet("images", `cast/${m}.png`)) await get(`examples/cast/${m}.webp`, `cast/${m}.png`, {});
@@ -526,10 +529,13 @@ function render() {
       <button id="proj">Export project file</button>
       <button id="del" class="danger">Delete book</button>
     </div>
+    <p class="hint" id="previewLink"></p>
     <p class="hint">The device folder holds <code>book.json</code>, <code>cover.webp</code> and <code>p01.webp…</code> at ${W}×${H} (JPEG in Safari).
       Unzip into <code>book-generator/out/</code> and run <code>../nighttime-books/push.sh ${esc(book.slug)}</code>.</p>
     <pre id="log"></pre>
   </fieldset>`;
+  exampleIndex().then(idx => { if (idx.books[book.slug] && $("#previewLink")) $("#previewLink").innerHTML =
+    `Shareable preview of this example: <a href="read.html?book=${esc(book.slug)}" target="_blank">read.html?book=${esc(book.slug)}</a>`; });
   $("#refCards").innerHTML = refKeys(book).map(cardHtml).join("");
   $("#pageCards").innerHTML = pageKeys(book).map(cardHtml).join("");
   ed.classList.toggle("showtext", $("#showText").checked);
@@ -627,6 +633,10 @@ function bindEditor() {
 async function reloadCast() { for (const m of book.cast) if (!imgs["cast:" + m]) { const r = await dbGet("images", `cast/${m}.png`); if (r) setImg("cast:" + m, r); } }
 
 /* ---------- start ---------- */
+exampleIndex().then(idx => {   // move books that ship with pictures into their own group
+  for (const slug of Object.keys(idx.books)) { const o = $(`#exText option[value="${slug}"]`); if (o) $("#exPics").append(o); }
+  if (!$("#exPics").children.length) $("#exPics").remove();
+});
 openDb().then(async () => {
   await refreshList();
   const last = pref("last", ""); if (last && await dbGet("books", last)) openBook(last);

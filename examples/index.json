@@ -1,299 +1,397 @@
 {
  "books": {
+  "cascades": {
+   "title": "Goodnight, Mountain",
+   "images": {
+    "char": {
+     "prompt": "Character reference sheet for a children's picture book. Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette: fir green, slate blue, ochre, rust, cream snow.. Show the same character three times on a plain cream background: standing front view, side view, and curled up asleep. The character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Identical colours, markings and proportions in all three.",
+     "cost": 0.0673165,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.7
+    },
+    "cover": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. Cover illustration for the book 'Goodnight, Mountain'. Scene: Marlo standing up on a boulder in an alpine meadow, a snowy peak behind. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly. The cover may use the whole image.",
+     "cost": 0.067899,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.9
+    },
+    "p01": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 1 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Marlo upright on a boulder, pink-lit snowy peak, fir trees. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067922,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.2
+    },
+    "p02": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 2 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Marlo whistling, small sound marks echoing off the peak. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.06792,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.3
+    },
+    "p03": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 3 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mother bear and cub walking toward a den beneath a big fir, Marlo watching. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679225,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.9
+    },
+    "p04": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 4 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Two white mountain goats on a ledge, Marlo far below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679205,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3
+    },
+    "p05": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 5 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Small round pika beside a haystack in the rocks, Marlo beside him. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067922,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.9
+    },
+    "p06": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 6 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Three elk lying in a meadow, lavender sky. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067919,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 13.3
+    },
+    "p07": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 7 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Two chipmunks at a burrow under a log, Marlo nearby. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679215,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 11.9
+    },
+    "p08": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 8 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Clear creek with two salmon in a still pool, Marlo on the bank. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067922,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 12.4
+    },
+    "p09": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 9 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Grey jay on a fir branch, head tucked, Marlo below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067921,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.9
+    },
+    "p10": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 10 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Snowy peak with a pale indigo sky full of stars, Marlo small on his rock. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679235,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.4
+    },
+    "p11": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 11 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Burrow entrance in the rocks with a pile of sleepy marmots. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067921,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.6
+    },
+    "p12": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in the style of a vintage national-park screen print: flat overlapping spot colours, simplified geometric shapes for mountains, trees and animals, slight print misregistration and paper grain, a limited palette of five muted colours plus cream, no outlines except where shapes meet, no gradients, no photorealism. Backgrounds are cream with a pale flat sky. Dark colours only for small shapes and accents, never large dark areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain cream or flat meadow) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): fir green, slate blue, ochre, rust, cream snow.. Animals keep their natural colours. Sky and light over the story: gold alpenglow on the peak → pink → lavender dusk → pale indigo with stars (never black).. This is page 12 of 12; pick the sky and light for that point in the evening. Main character: Marlo, a plump young hoary marmot with silver-grey and brown fur, a short bushy tail and small round ears. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Wide mountain view, meadow, firs, peak, stars, Marlo asleep in the burrow mouth. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067925,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.6
+    }
+   }
+  },
   "farm": {
-   "char": {
-    "prompt": "Character reference sheet for a children's picture book. Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette: peach, lavender, moss green, straw yellow, warm brown.. Show the same character three times on a plain cream background: standing front view, side view, and curled up asleep. The character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Identical colours, markings and proportions in all three.",
-    "cost": 0.067303,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.2
-   },
-   "cover": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. Cover illustration for the book 'Goodnight, Little Farm'. Scene: Pip sitting at the farm gate looking at the setting sun, barn behind. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly. Keep the bottom quarter of the image simple and uncluttered.",
-    "cost": 0.067875,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.5
-   },
-   "p01": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 1 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pip at the farmyard gate, peach sky, barn and farmhouse behind. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067896,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.3
-   },
-   "p02": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 2 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Henhouse, three hens on a roost, Pip peeking in. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0678955,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 12.4
-   },
-   "p03": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 3 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Barn interior, one cow settling in hay. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067893,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.1
-   },
-   "p04": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 4 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pigpen, round pink pig, eyes closed. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0678935,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.5
-   },
-   "p05": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): peach, lavender, moss green, straw yellow, warm brown.. Animals keep their natural colours. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 5 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Meadow, three fluffy cream-white sheep in a huddle, Pip sitting nearby watching them. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679055,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.1
-   },
-   "p06": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): peach, lavender, moss green, straw yellow, warm brown.. Animals keep their natural colours. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 6 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Stable door with a brown horse's head resting on it, Pip looking up from below, lavender sky. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067907,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.9
-   },
-   "p07": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 7 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pond, four ducks in a line, moon reflected. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067894,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.8
-   },
-   "p08": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 8 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Old red tractor in an open shed, Pip beside a big wheel. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0678955,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.6
-   },
-   "p09": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 9 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Farmhouse with three glowing windows, deep lavender sky. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067894,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.1
-   },
-   "p10": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 10 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Big cream moon over the barn roof, Pip small in the yard. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067896,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.4
-   },
-   "p11": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 11 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Kitchen corner, Pip in a wicker basket with a blanket. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067895,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.9
-   },
-   "p12": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach \u2192 lavender \u2192 pale night with a big cream moon.. This is page 12 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Whole farm from a little way off, every window dark but one, moon and stars. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067898,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.8
+   "title": "Goodnight, Little Farm",
+   "images": {
+    "char": {
+     "prompt": "Character reference sheet for a children's picture book. Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette: peach, lavender, moss green, straw yellow, warm brown.. Show the same character three times on a plain cream background: standing front view, side view, and curled up asleep. The character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Identical colours, markings and proportions in all three.",
+     "cost": 0.067303,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.2
+    },
+    "cover": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. Cover illustration for the book 'Goodnight, Little Farm'. Scene: Pip sitting at the farm gate looking at the setting sun, barn behind. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly. Keep the bottom quarter of the image simple and uncluttered.",
+     "cost": 0.067875,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.5
+    },
+    "p01": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 1 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pip at the farmyard gate, peach sky, barn and farmhouse behind. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067896,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3
+    },
+    "p02": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 2 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Henhouse, three hens on a roost, Pip peeking in. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0678955,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 12.4
+    },
+    "p03": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 3 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Barn interior, one cow settling in hay. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067893,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.1
+    },
+    "p04": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 4 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pigpen, round pink pig, eyes closed. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0678935,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.5
+    },
+    "p05": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): peach, lavender, moss green, straw yellow, warm brown.. Animals keep their natural colours. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 5 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Meadow, three fluffy cream-white sheep in a huddle, Pip sitting nearby watching them. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679055,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.1
+    },
+    "p06": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): peach, lavender, moss green, straw yellow, warm brown.. Animals keep their natural colours. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 6 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Stable door with a brown horse's head resting on it, Pip looking up from below, lavender sky. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067907,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.9
+    },
+    "p07": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 7 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Pond, four ducks in a line, moon reflected. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067894,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.8
+    },
+    "p08": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 8 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Old red tractor in an open shed, Pip beside a big wheel. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0678955,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.6
+    },
+    "p09": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 9 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Farmhouse with three glowing windows, deep lavender sky. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067894,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.1
+    },
+    "p10": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 10 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Big cream moon over the barn roof, Pip small in the yard. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067896,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.4
+    },
+    "p11": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 11 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Kitchen corner, Pip in a wicker basket with a blanket. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067895,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.9
+    },
+    "p12": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6. Flat, hand-drawn look with soft, confident black outlines and gentle rounded shapes. Limited palette of five muted colours plus cream. Flat fills, no gradients, no shading, no texture, no photorealism. Backgrounds are pale and mostly empty. Dark colours only in outlines and small accents, never as large areas. Warm, calm, sleepy mood. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) so text can be placed there. No text, letters or numbers anywhere in the image. Palette for this book: peach, lavender, moss green, straw yellow, warm brown.. Sky and light over the story: peach → lavender → pale night with a big cream moon.. This is page 12 of 12; pick the sky and light for that point in the evening. Main character: Pip, a small brown-and-white puppy with floppy ears and a red collar. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Whole farm from a little way off, every window dark but one, moon and stars. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067898,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.8
+    }
    }
   },
   "kittens": {
-   "char": {
-    "prompt": "Character reference sheet for a children's picture book. Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette: dove grey, apricot, sage green, butter yellow, rose.. Show the same character three times on a plain cream background: standing front view, side view, and curled up asleep. The character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Identical colours, markings and proportions in all three.",
-    "cost": 0.067298,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.4
-   },
-   "cover": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. Cover illustration for the book 'Goodnight, Kittens'. Scene: Mim on a windowsill, a cosy living room with sleeping cats behind her. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly. The cover may use the whole image.",
-    "cost": 0.0678765,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 11.3
-   },
-   "p01": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 1 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim wide awake in a cosy hallway, lamp glowing, apricot evening through the window. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.9
-   },
-   "p02": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 2 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Large orange tabby cat asleep in an armchair, Mim tiptoeing past. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.2
-   },
-   "p03": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 3 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Very fluffy white Persian cat in a round basket, Mim peeking over the edge. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.8
-   },
-   "p04": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 4 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Cream Siamese cat with dark points stretched along a radiator under a window, Mim below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.5
-   },
-   "p05": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 5 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Small black cat curled on top of an upright piano, Mim on the piano stool. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.0
-   },
-   "p06": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 6 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Orange, black and white calico cat on a stair, one paw dangling, Mim on the step below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067903,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.3
-   },
-   "p07": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 7 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Huge shaggy brown Maine Coon filling a doormat, tiny Mim beside him. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.0
-   },
-   "p08": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 8 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Scruffy grey-and-white old cat on a pile of hay by an open back door, rose sky outside. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679045,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.5
-   },
-   "p09": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 9 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim looking into an empty bowl on a kitchen floor, a round wall clock above. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679005,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.6
-   },
-   "p10": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 10 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim on a windowsill looking up at a big moon, pale lavender sky (light, not dark blue). Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067903,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.3
-   },
-   "p11": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 11 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Close-up of Mim mid-yawn on a rug. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.067899,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.5
-   },
-   "p12": {
-    "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot \u2192 rose \u2192 lavender, warm lamplight in the windows.. This is page 12 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim curled up asleep against the ginger tom in the armchair, lamp glowing. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
-    "cost": 0.0679,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.1
+   "title": "Goodnight, Kittens",
+   "images": {
+    "char": {
+     "prompt": "Character reference sheet for a children's picture book. Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette: dove grey, apricot, sage green, butter yellow, rose.. Show the same character three times on a plain cream background: standing front view, side view, and curled up asleep. The character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Identical colours, markings and proportions in all three.",
+     "cost": 0.067298,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.4
+    },
+    "cover": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. Cover illustration for the book 'Goodnight, Kittens'. Scene: Mim on a windowsill, a cosy living room with sleeping cats behind her. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly. The cover may use the whole image.",
+     "cost": 0.0678765,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 11.3
+    },
+    "p01": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 1 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim wide awake in a cosy hallway, lamp glowing, apricot evening through the window. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.9
+    },
+    "p02": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 2 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Large orange tabby cat asleep in an armchair, Mim tiptoeing past. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.2
+    },
+    "p03": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 3 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Very fluffy white Persian cat in a round basket, Mim peeking over the edge. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.8
+    },
+    "p04": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 4 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Cream Siamese cat with dark points stretched along a radiator under a window, Mim below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.5
+    },
+    "p05": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 5 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Small black cat curled on top of an upright piano, Mim on the piano stool. Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.0
+    },
+    "p06": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 6 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Orange, black and white calico cat on a stair, one paw dangling, Mim on the step below. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067903,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3
+    },
+    "p07": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 7 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Huge shaggy brown Maine Coon filling a doormat, tiny Mim beside him. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.0
+    },
+    "p08": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 8 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Scruffy grey-and-white old cat on a pile of hay by an open back door, rose sky outside. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679045,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.5
+    },
+    "p09": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 9 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim looking into an empty bowl on a kitchen floor, a round wall clock above. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679005,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.6
+    },
+    "p10": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 10 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim on a windowsill looking up at a big moon, pale lavender sky (light, not dark blue). Keep the top quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067903,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.3
+    },
+    "p11": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 11 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Close-up of Mim mid-yawn on a rug. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.067899,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.5
+    },
+    "p12": {
+     "prompt": "Children's picture-book illustration for ages 3 to 6 in soft gouache in a mid-century picture-book manner: opaque matte paint with visible brush strokes, rounded simplified shapes, gentle paper texture, a limited palette of five muted colours plus cream, no hard black outlines (shapes are defined by colour), no gradients, no photorealism. Backgrounds are light and simple. Dark tones only in small accents, never large dark areas. Warm, calm, sleepy mood. No text, letters or numbers anywhere in the image. Palette for this book (for skies, ground, buildings and accents): dove grey, apricot, sage green, butter yellow, rose.. Animals keep their natural colours. Sky and light over the story: apricot → rose → lavender, warm lamplight in the windows.. This is page 12 of 12; pick the sky and light for that point in the evening. Main character: Mim, a small grey tabby kitten with dark stripes, white paws, a white chin and big green eyes. Match the attached character reference exactly (same colours, markings, proportions), unless the scene does not include the character. Scene: Mim curled up asleep against the ginger tom in the armchair, lamp glowing. Keep the bottom quarter of the image simple and uncluttered (plain ground, water or sky) because a text panel will be drawn there.",
+     "cost": 0.0679,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.1
+    }
    }
   },
   "r01-sit-pip": {
-   "cover": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip the beagle pup sitting, looking at the reader. Big, simple and friendly. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678715,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.3,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p01": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip the beagle pup sitting, looking at the reader. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678685,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.4,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p02": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip the ginger kitten sitting. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678635,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.3,
-    "refs": [
-     "Tip"
-    ]
-   },
-   "p03": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip sitting up straight and proud. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678665,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 8.9,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p04": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip sitting down beside Pip. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.068434,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.7,
-    "refs": [
-     "Pip",
-     "Tip"
-    ]
-   },
-   "p05": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip patting Pip's head with one paw. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0684365,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.4,
-    "refs": [
-     "Pip",
-     "Tip"
-    ]
-   },
-   "p06": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip tapping the floor with a paw, small motion marks. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.067869,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.3,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p07": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip lying down with eyes closed. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678665,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.0,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p08": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: A tin of food on the floor, Pip sniffing it. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.067869,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.0,
-    "refs": [
-     "Pip"
-    ]
-   },
-   "p09": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip sipping from a saucer. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0678635,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.2,
-    "refs": [
-     "Tip"
-    ]
-   },
-   "p10": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip and Tip sitting side by side. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.068435,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.6,
-    "refs": [
-     "Pip",
-     "Tip"
-    ]
-   },
-   "p11": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Both lying down, eyes closing. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.0684345,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 9.5,
-    "refs": [
-     "Pip",
-     "Tip"
-    ]
-   },
-   "p12": {
-    "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Both asleep, curled together. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
-    "cost": 0.068434,
-    "model": "google/gemini-3.1-flash-image",
-    "seconds": 10.8,
-    "refs": [
-     "Pip",
-     "Tip"
-    ]
+   "title": "Sit, Pip",
+   "images": {
+    "cover": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip the beagle pup sitting, looking at the reader. Big, simple and friendly. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678715,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p01": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip the beagle pup sitting, looking at the reader. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678685,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.4,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p02": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip the ginger kitten sitting. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678635,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3,
+     "refs": [
+      "Tip"
+     ]
+    },
+    "p03": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip sitting up straight and proud. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678665,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 8.9,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p04": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip sitting down beside Pip. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.068434,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.7,
+     "refs": [
+      "Pip",
+      "Tip"
+     ]
+    },
+    "p05": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip patting Pip's head with one paw. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0684365,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.4,
+     "refs": [
+      "Pip",
+      "Tip"
+     ]
+    },
+    "p06": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip tapping the floor with a paw, small motion marks. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.067869,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.3,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p07": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip lying down with eyes closed. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678665,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.0,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p08": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. The attached images are character references, in this order: Pip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: A tin of food on the floor, Pip sniffing it. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.067869,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.0,
+     "refs": [
+      "Pip"
+     ]
+    },
+    "p09": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Tip sipping from a saucer. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0678635,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.2,
+     "refs": [
+      "Tip"
+     ]
+    },
+    "p10": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Pip and Tip sitting side by side. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.068435,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.6,
+     "refs": [
+      "Pip",
+      "Tip"
+     ]
+    },
+    "p11": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Both lying down, eyes closing. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.0684345,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 9.5,
+     "refs": [
+      "Pip",
+      "Tip"
+     ]
+    },
+    "p12": {
+     "prompt": "Very simple, bold, clean picture-book illustration for a child learning to read: flat colours, thick soft black outlines, big rounded shapes, plain cream background with at most one prop, nothing in the picture that is not in the sentence, no scenery, no gradients, no texture, no photorealism. Limited palette of five muted colours plus cream. Dark colours only in outlines and small accents. Friendly, calm mood. No text, letters or numbers anywhere in the image. Palette: cream, warm grey, ginger orange, soft blue, grass green.. Animals keep their natural colours. Characters in this picture: Pip, a small brown-and-white beagle puppy with floppy ears and a red collar. Tip, a small ginger kitten with white paws and big round eyes. The attached images are character references, in this order: Pip, Tip. Draw each character exactly as in its reference (same colours, markings, proportions). Show only what the scene describes, on a plain cream background. Scene: Both asleep, curled together. Keep the bottom third of the image plain cream because a large text panel will be drawn there.",
+     "cost": 0.068434,
+     "model": "google/gemini-3.1-flash-image",
+     "seconds": 10.8,
+     "refs": [
+      "Pip",
+      "Tip"
+     ]
+    }
    }
   }
  },

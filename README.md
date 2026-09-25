@@ -1,5 +1,9 @@
 # Book Generator
 
+**See finished books:** https://sirmick.github.io/kids-bookgen/read.html
+(link one directly: `read.html?book=cascades`, or a page: `read.html?book=farm&p=5`) ·
+**Make one:** https://sirmick.github.io/kids-bookgen/
+
 Makes illustrated 12-page picture books for the Nighttime Books reader
 (`../nighttime-books`, the Android app for the Bigme HiBreak). Images come from
 Nano Banana (`google/gemini-3.1-flash-image`) on OpenRouter, about $0.07 each.
@@ -38,5 +42,5 @@ The key comes from `OPENROUTER_API_KEY` or `../openrouter.token`.
 
 Device pages are WebP at quality 85, about 50 KB each (0.5–3 MB a book). The model returns PNG,
 and even these flat-looking pictures have ~40,000 colours from soft edges and grain, so a lossless
-page is 0.7–1 MB. `work/` (the model's originals) and `out/` are not in git; `examples/` holds three
-finished books as WebP for the web page.
+page is 0.7–1 MB. `work/` (the model's originals) and `out/` are not in git; `examples/` holds finished
+books as WebP for the web page and `read.html`; add one with `python3 make_examples.py <slug>`.
