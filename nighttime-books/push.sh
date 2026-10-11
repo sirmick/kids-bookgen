@@ -1,5 +1,7 @@
 #!/bin/bash
 # push.sh <slug>...   copies ../out/<slug> into the app's internal books folder on the HiBreak.
+# ADB_SERIAL overrides the device: the USB serial below, or <hibreak-ip>:5555 after a one-time
+# `adb tcpip 5555` from a USB-attached box, then `adb connect <hibreak-ip>:5555` (e.g. from devel).
 # Goes via /data/local/tmp and `run-as`, which needs the debug (debuggable) build of the app.
 S=${ADB_SERIAL:-B6CLR0W2GEHB006000181}
 PKG=com.mick.nighttimebooks

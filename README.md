@@ -19,7 +19,11 @@ Open `index.html` in Chrome or Firefox (double-click, or `xdg-open index.html`).
 4. **Generate missing**: character sheet(s) first, then cover and pages, which get the sheet(s) as references.
    Click an image to see its prompt; **Redo** regenerates one page.
 5. **Download device zip** (or **Write to folder…** in Chrome), unzip into `out/`, then
-   `nighttime-books/push.sh <slug>`.
+   `nighttime-books/push.sh <slug>`. Over Wi-Fi (from devel): `adb connect <hibreak-ip>:5555`
+   once, then `ADB_SERIAL=<hibreak-ip>:5555 nighttime-books/push.sh <slug>`.
+
+The app builds with `cd nighttime-books/app && ./gradlew -q assembleDebug` (JDK 17 + Android
+SDK 34; the homelab's `devel` box has both, see its devel.py).
 
 Bedtime books use one main character and one reference sheet. Reading books have a named cast;
 each page only gets the references for the names in its text or beat, and the cast sheets are
