@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Nighttime Books</string>
+    <string name="empty">No books yet.\n\nPush a book folder to\n%s</string>
+</resources>

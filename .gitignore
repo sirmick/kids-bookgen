@@ -2,3 +2,10 @@ work/
 out/
 __pycache__/
 *.token
+
+# Android app (nighttime-books/)
+nighttime-books/app/build/
+nighttime-books/app/app/build/
+nighttime-books/app/.gradle/
+nighttime-books/app/local.properties
+*.apk

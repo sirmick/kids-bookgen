@@ -5,7 +5,7 @@
 **Make one:** https://sirmick.github.io/kids-bookgen/
 
 Makes illustrated 12-page picture books for the Nighttime Books reader
-(`../nighttime-books`, the Android app for the Bigme HiBreak). Images come from
+(`nighttime-books/`, the Android app for the Bigme HiBreak). Images come from
 Nano Banana (`google/gemini-3.1-flash-image`) on OpenRouter, about $0.07 each.
 
 ## HTML front end (no server)
@@ -19,7 +19,7 @@ Open `index.html` in Chrome or Firefox (double-click, or `xdg-open index.html`).
 4. **Generate missing**: character sheet(s) first, then cover and pages, which get the sheet(s) as references.
    Click an image to see its prompt; **Redo** regenerates one page.
 5. **Download device zip** (or **Write to folder…** in Chrome), unzip into `out/`, then
-   `../nighttime-books/push.sh <slug>`.
+   `nighttime-books/push.sh <slug>`.
 
 Bedtime books use one main character and one reference sheet. Reading books have a named cast;
 each page only gets the references for the names in its text or beat, and the cast sheets are
